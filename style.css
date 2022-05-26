@@ -9,6 +9,38 @@
 
     
 }
+.webpage{
+    background:black;
+    height:100%;
+    width:100%;
+    display:grid;
+    grid-template-columns: auto 0px;
+}
+.content{
+    background:none;
+    height:100%;
+    width:auto;
+}
+.scroll{
+    text-decoration:none;
+    padding:10px;
+    color:#fff;
+    background:#000;
+    border-radius: 100px;
+    place-self: end;
+    width: auto;
+    position:sticky;
+    bottom:20px;
+    --offset: 100px;
+    margin-top: calc(100vh + var(--offset));
+    white-space:nowrap;
+}
+.scroll a{
+    text-decoration: none;
+    color:white;
+    background:none;
+
+}
 html{
     scroll-behavior: smooth;
 }
@@ -93,6 +125,7 @@ nav ul li a:hover{
     font-weight: bold;
     margin-left: 50px;
     text-align: center;
+    padding-top:3px;
 } 
 .nft-badges:hover{ 
     background: linear-gradient( -45deg,#9B1196, #541D5E, #366960, #094C4E); 
@@ -116,11 +149,22 @@ aside{
 .pic1{
     height: 100%;
     width: 50%;
-    position: relative;
     background: linear-gradient(rgba(0, 0, 0, 0.633),rgba(0, 0, 0, 0.633)),url(circle.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    line-height: normal;
+}
+.lorem{
+    font-size: 19px;
+    background: none;
+    color:#fff;
+}
+.lorem2{
+    font-size: 19px;
+    background: none;
+    color: #fff;
+    margin-top: 15px;
 }
 .haven{
     color:#00FFFF;
@@ -139,13 +183,12 @@ aside{
 }
 .pic2{
     height: 100%;
-    width: 50%;
-    position: relative;
+    width: 35%;
     background:url(side-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin-left: 150px;
+    margin-left: 200px;
 }
 .explore{
     height: 40px;
@@ -158,13 +201,27 @@ aside{
     box-sizing: border-box;
     border-radius: 20px;
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 60px;
     font-weight: bold;
     margin-left: 50px;
     text-align: center;
 }
+.explore:hover{
+    background: linear-gradient( -45deg,#9B1196, #541D5E, #366960, #094C4E); 
+    border: 1px solid#984D00;
+    color:aqua;
+
+}
+.explore a{
+    text-decoration: none;
+    color:#984D00;
+    background:none;
+}
+.explore a:hover{
+    color:aqua;
+}
 .large{
-    height: 1500px;
+    height: 1600px;
     width: 100%;
     background:linear-gradient(-45deg, #193431,#364742,#85663D,#16034E, #03000A)
 }
@@ -175,6 +232,7 @@ aside{
     font-weight: 900;
     font-size: 40px;
     background: none;
+    padding-top: 100px;
 }
 .pic-desc1{
     margin-top: 50px;
@@ -276,7 +334,7 @@ aside{
 
 }
 .next-big-thing{
-    height: 600px;
+    height: 800px;
     width:100%;
     background: url(hui.jpg);
     background-repeat: no-repeat;
@@ -420,27 +478,28 @@ footer{
     background: none;
     border: 1px;
     margin-left: 80px;
+    margin-top: 50px;
 }
 .fr2{
     height: 250px;
     width: 300px;
     background: none;
     border: 1px;
-    margin-left: 70px;
+    margin-left: 20px;
 }
 .fr3{
     height: 250px;
     width: 300px;
     background: none;
     border: 1px ;
-    margin-left: 70px;
+    margin-left: 20px;
 }
 .fr4{
     height: 250px;
     width: 300px;
     background: none;
     border: 1px ;
-    margin-left: 70px;
+    margin-left: 20px;
 }
 .fr1logo{
     border: 1px ;
@@ -515,7 +574,7 @@ footer{
     height:40px;
     width: 40px;
     border: 1px ;
-    background: url(medium.svg);
+    background: url(loi.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -533,7 +592,7 @@ footer{
     background:none;
     list-style-type: none;
     align-content: space-between;
-    margin-top: 20px;
+    margin-top: 70px;
 }
 .fr2 ul li{
     text-align: center;
@@ -557,7 +616,7 @@ footer{
     background:none;
     list-style-type: none;
     align-content: space-between;
-    margin-top: 20px;
+    margin-top: 70px;
 }
 .fr3 ul li{
     text-align: center;
@@ -581,7 +640,7 @@ footer{
     background:none;
     list-style-type: none;
     align-content: space-between;
-    margin-top: 20px;
+    margin-top: 70px;
 }
 .fr4 ul li{
     text-align: center;
@@ -616,6 +675,13 @@ footer{
 .scrolltop{
     width:100%;
     background:linear-gradient(-45deg, #193431,#364742,#85663D,#16034E, #03000A);
+    height: 52px;
+    display: flex;
+}
+.useless{
+    height: 40px;
+    width: 40px;
+    position:fixed
 }
 .top-button{
     height:50px;
@@ -624,6 +690,10 @@ footer{
     border:1px;
     border-radius: 50px;
     margin-left: 1290px;
+    position:sticky;
+    z-index: 1;
+    top:0;
+    
 }
 .top-button a{
     background: none;
@@ -643,6 +713,9 @@ footer{
     border:1px;
     margin-top: 5px;
 
+}
+.fr1 input::placeholder{
+    padding-left: 10px;
 }
 .socials a{
     background:none;
