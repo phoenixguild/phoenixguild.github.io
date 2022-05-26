@@ -50,6 +50,7 @@ nav{
     display:flex;
     width:100%;
 
+
 }
 #logo{
     border: 1px;
@@ -140,7 +141,7 @@ nav ul li a:hover{
     color:aqua;
 }
 aside{
-    height: 600px;
+    height: 800px;
     width:100%;
     border:1px;
     background: #000000;
@@ -154,17 +155,68 @@ aside{
     background-size: cover;
     background-position: center;
     line-height: normal;
+    position:relative;
+    
+}
+.spin{
+    position:absolute;
+    background:linear-gradient(rgba(0, 0, 0, 0.633),rgba(0, 0, 0, 0.633)),url(circle.jpg);
+    margin-left:257px;
+    height: 150px;
+    width:150px;
+    top: 323px;
+    border:1px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: rotation .02s infinite linear;
+    border-radius: 150px;
+    z-index: 9;
+}
+@keyframes rotation 
+{
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+.spin1{
+    position:absolute;
+    background:linear-gradient(rgba(0, 0, 0, 0.633),rgba(0, 0, 0, 0.633)),url(circle.jpg);
+    margin-left:-70px;
+    height: 800px;
+    width:800px;
+    top: 0px;
+    border:1px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: rotating .02s infinite linear;
+    border-radius: 800px;
+}
+@keyframes rotating 
+{
+    from {
+      transform: rotate(359deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
 }
 .lorem{
     font-size: 19px;
     background: none;
-    color:#fff;
+    color:#A0C5F1;
+    font-weight: lighter;
 }
 .lorem2{
     font-size: 19px;
     background: none;
-    color: #fff;
+    color: #A0C5F1;
     margin-top: 15px;
+    font-weight: lighter;
 }
 .haven{
     color:#00FFFF;
@@ -173,22 +225,55 @@ aside{
     background:none;
     padding-top: 100px;
     padding-left: 50px;
+    z-index: 10;
+    position:relative
 }
 .haven span{
     color:#A0C5F1;
     font-weight: lighter;
     font-size: 20px;
     background:none;
+    z-index: 10;
+    position:relative;
     
 }
 .pic2{
-    height: 100%;
-    width: 35%;
+    height: 94%;
+    width: 45%;
     background:url(side-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     margin-left: 200px;
+    margin-top: 40px;
+    background-blend-mode: hard-light;
+    opacity:0.7;
+    display: flex;
+}
+.avalanche{
+    height:250px;
+    width:200px;
+    background: url(avax.png);
+    border:1px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 460px;
+    margin-left:5px;
+    place-self: end;
+}
+.blade{
+    height:300px;
+    width:300px;
+    background: none;
+    border:1px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 460px;
+    margin-left:30px;
+    position: relative;
+}
+.blade img{
+    background: none;
 }
 .explore{
     height: 40px;
@@ -205,6 +290,7 @@ aside{
     font-weight: bold;
     margin-left: 50px;
     text-align: center;
+    padding-top: 3px;
 }
 .explore:hover{
     background: linear-gradient( -45deg,#9B1196, #541D5E, #366960, #094C4E); 
@@ -232,7 +318,7 @@ aside{
     font-weight: 900;
     font-size: 40px;
     background: none;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 .pic-desc1{
     margin-top: 50px;
@@ -451,28 +537,34 @@ aside{
     position: relative;
 }
 .wrapper-content{
-    background: url(sword.png);
-    height: 200px;
-    width: 800px;
+    background: none;
+    height: 230px;
+    width: 620px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     position:absolute;
-    margin-left: 277px;
+    margin-left: 350px;
+    margin-top: 80px;
+}
+.wrapper-content img{
+    background-image: none;
 }
 .write-up{
     border: 3px ;
     height: auto;
-    width: 600px;
+    width: 415px;
     margin: auto;
     border-radius: 20px;
     background: linear-gradient(to right, #981196, #439292, #05360A);
     z-index: 9;
+    margin-top: 80px;
+    margin-left: 452px;
 }
 .top-right-image{ 
     border: 1px ;
     height: 50px;
     width: 50px;
-    margin-left: 555px;
+    margin-left: 370px;
     transform: rotate(45deg);
     background-image:url(gamepad.svg);
 
@@ -631,19 +723,21 @@ footer{
 .fr2 ul li{
     text-align: center;
     background: none;
-    font-size: 17px;
+    font-size: 22px;
     color:white;
     margin-bottom: 40px;
     font-weight: bold;
+    letter-spacing: 2px;
 }
 .fr2 ul li a{
     text-align: center;
     background: none;
-    font-size: 15px;
+    font-size: 17px;
     color:white;
     margin-top: 4px;
     text-decoration: none;
     font-weight: lighter;
+    letter-spacing: 2px;
 
 }
 .fr3 ul{
@@ -655,7 +749,7 @@ footer{
 .fr3 ul li{
     text-align: center;
     background: none;
-    font-size: 17px;
+    font-size: 22px;
     color:white;
     margin-bottom: 40px;
     font-weight: bold;
@@ -663,11 +757,12 @@ footer{
 .fr3 ul li a{
     text-align: center;
     background: none;
-    font-size: 15px;
+    font-size: 17px;
     color:white;
     margin-top: 4px;
     text-decoration: none;
     font-weight: lighter;
+    letter-spacing: 2px;
 
 }
 .fr4 ul{
@@ -679,7 +774,7 @@ footer{
 .fr4 ul li{
     text-align: center;
     background: none;
-    font-size: 17px;
+    font-size: 22px;
     color:white;
     margin-bottom: 40px;
     font-weight: bold;
@@ -687,11 +782,12 @@ footer{
 .fr4 ul li a{
     text-align: center;
     background: none;
-    font-size: 15px;
+    font-size: 17px;
     color:white;
     margin-top: 4px;
     text-decoration: none;
     font-weight: lighter;
+    letter-spacing: 2px;
 
 }
 .fr4 ul li a:hover{
@@ -745,7 +841,7 @@ footer{
     background: #981196;
     color:#FFFFFF;
     border:1px;
-    margin-top: 5px;
+    position: absolute;
 
 }
 .fr1 input::placeholder{
@@ -756,3 +852,18 @@ footer{
     height: 40px;
     width:40px;
 }
+.fr1 .search{
+    height: 30px;
+    width: 80px;
+    border-radius: 50px;
+    color: #981196;
+    background:#FFFFFF;
+    border:1px;
+    margin-top: 5px;
+    position: relative;
+    margin-left: 170px;
+    margin-top: -50px;
+
+}
+
+
