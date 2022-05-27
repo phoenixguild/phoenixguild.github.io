@@ -49,6 +49,7 @@ nav{
     height: 60px;
     display:flex;
     width:100%;
+    z-index: 10;
 
 
 }
@@ -153,6 +154,7 @@ aside{
     border:1px;
     background: #000000;
     display: flex;
+    overflow: hidden;
 }
 .pic1{
     height: 100%;
@@ -167,17 +169,17 @@ aside{
 }
 .spin{
     position:absolute;
-    background:linear-gradient(rgba(0, 0, 0, 0.633),rgba(0, 0, 0, 0.633)),url(circle.jpg);
-    margin-left:257px;
-    height: 150px;
-    width:150px;
-    top: 323px;
+    background:url(circle.jpg);
+    margin-left:147px;
+    height: 400px;
+    width:400px;
+    top: 143px;
     border:1px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    animation: rotation 3s infinite linear;
-    border-radius: 150px;
+    animation: rotation 2s infinite linear;
+    border-radius: 400px;
     z-index: 9;
 }
 @keyframes rotation 
@@ -191,17 +193,17 @@ aside{
 }
 .spin1{
     position:absolute;
-    background:linear-gradient(rgba(0, 0, 0, 0.633),rgba(0, 0, 0, 0.633)),url(circle.jpg);
-    margin-left:-70px;
-    height: 800px;
-    width:800px;
-    top: 0px;
+    background:url(circle.jpg);
+    margin-left:-450px;
+    height: 1600px;
+    width:1600px;
+    top: -450px;
     border:1px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    animation: rotating 3s infinite linear;
-    border-radius: 800px;
+    animation: rotating 2s infinite linear;
+    border-radius: 1600px;
 }
 @keyframes rotating 
 {
@@ -217,6 +219,7 @@ aside{
     background: none;
     color:#A0C5F1;
     font-weight: lighter;
+    margin-top: 15px;
 }
 .lorem2{
     font-size: 19px;
@@ -293,9 +296,9 @@ aside{
     box-sizing: border-box;
     border-radius: 20px;
     font-size: 20px;
-    margin-top: 60px;
+    margin-top: 100px;
     font-weight: bold;
-    margin-left: 50px;
+    margin-left: 210px;
     text-align: center;
     padding-top: 3px;
 }
@@ -326,6 +329,11 @@ aside{
     font-size: 40px;
     background: none;
     padding-top: 50px;
+    border: 1px;
+    box-sizing: border-box;
+    height:fit-content;
+    width: 100%;
+    word-spacing: 60px;
 }
 .pic-desc1{
     margin-top: 50px;
@@ -333,6 +341,7 @@ aside{
     background:linear-gradient(rgba(0, 0, 0, 0.295),rgba(0, 0, 0, 0.288));
     height:400px;
     width: 100%;
+
 }
 .image1{
     height: 300px;
@@ -345,6 +354,7 @@ aside{
     border-radius: 20px;
     margin-left:250px;
     background-position: center;
+    box-shadow: 4px 4px 6px #000000;
 }
 .description1{
     height: 50%;
@@ -374,6 +384,7 @@ aside{
     width: 300px;
     border-radius: 20px;
     background-position: center;
+    box-shadow: 4px 4px 6px #000000;
 }
 .description2{
     height: 50%;
@@ -406,6 +417,7 @@ aside{
     border-radius: 20px;
     margin-left:250px;
     background-position: center;
+    box-shadow: 4px 4px 6px #000000;
 }
 .description3{
     height: 50%;
@@ -468,15 +480,15 @@ aside{
     margin-top: 0;
 
 }
-.section-one:hover{
+.section1r:hover{
     background:linear-gradient(-45deg, #193431,#364742,#85663D,#16034E, #03000A);
     
 }
-.section-two:hover{
+.section2r:hover{
     background:linear-gradient(-45deg, #193431,#364742,#85663D,#16034E, #03000A);
     
 }
-.section-three:hover{
+.section3r:hover{
     background:linear-gradient(-45deg, #193431,#364742,#85663D,#16034E, #03000A);
     
 }
@@ -492,6 +504,8 @@ aside{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    z-index: 3;
+    box-shadow: 0px 0px black, -4px -4px black;
 }
 .sectionone1 img{
     background: none;
@@ -508,6 +522,7 @@ aside{
     margin:auto;
     border-radius: 40px;
     margin-top: -1px;
+    box-shadow: 3px 3px black;
   }
   
   .inner1 {
@@ -515,16 +530,29 @@ aside{
     width: 100%;
     height: 100%;
     text-align: center;
-    transition: transform 0.8s;
+    transition: transform 3s;
     transform-style: preserve-3d;
     background:none;
+    position:relative;
+    top:-105px;
 
   }
   
   .rotate1:hover .inner1 {
     transform: rotateY(180deg);
+    position: absolute;
+    top:0px;
   }
-  
+  .rotate1:hover .sectionone1{
+      transition: 2s;
+      position:relative;
+      z-index: 4;
+      margin-top: 250px;
+      box-shadow: 4px 4px #000000;
+}
+.rotate1:hover::after .sectionone1{
+    transition: 2s;
+}  
   .section-one, .section1r{
     position: absolute;
     width: 100%;
@@ -534,10 +562,12 @@ aside{
   }
   
   .section1r{
-    background-color: dodgerblue;
+    background:linear-gradient(-45deg, #193431,#364742,#85663D,#16034E, #03000A);
     color: white;
     transform: rotateY(180deg);
     border-radius: 40px;
+    padding-top: 20px;
+    box-sizing: border-box;
   }
 .sectiontwo1{
     border:3px solid #9B1196;
@@ -551,6 +581,8 @@ aside{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    z-index: 3;
+    box-shadow: 0px 0px black, -4px -4px black;
 }
 .sectiontwo1 img{
     background: none;
@@ -567,6 +599,7 @@ aside{
     margin:auto;
     border-radius: 40px;
     margin-top: -1px;
+    box-shadow: 3px 3px black;
   }
   
   .inner2 {
@@ -577,12 +610,23 @@ aside{
     transition: transform 0.8s;
     transform-style: preserve-3d;
     background:none;
+    position:relative;
+    top:-105px;
+
   }
   
   .rotate2:hover .inner2 {
     transform: rotateY(180deg);
+    position: absolute;
+    top:0px;
   }
-  
+  .rotate2:hover .sectiontwo1{
+      transition: 2s;
+      position:relative;
+      z-index: 4;
+      margin-top: 250px;
+      box-shadow: 4px 4px #000000;
+}
   .section-two, .section2r{
     position: absolute;
     width: 100%;
@@ -592,10 +636,12 @@ aside{
   }
   
   .section2r{
-    background-color: dodgerblue;
+    background:linear-gradient(-45deg, #193431,#364742,#85663D,#16034E, #03000A);
     color: white;
     transform: rotateY(180deg);
     border-radius: 40px;
+    padding-top: 20px;
+    box-sizing: border-box;
   }
 .sectionthree1{
     border:3px solid #9B1196;
@@ -609,6 +655,8 @@ aside{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    z-index: 3;
+    box-shadow: 0px 0px black, -4px -4px black;
 }
 .sectionthree1 img{
     background: none;
@@ -625,6 +673,7 @@ aside{
     margin:auto;
     border-radius: 40px;
     margin-top: -1px;
+    box-shadow: 3px 3px black;
   }
   
   .inner3 {
@@ -636,12 +685,24 @@ aside{
     transform-style: preserve-3d;
     background: none;
     border-radius: 40px;
+    position:relative;
+    top:-105px;
+
   }
   
   .rotate3:hover .inner3 {
     transform: rotateY(180deg);
+    position: absolute;
+    top:0px;
   }
-  
+  .rotate3:hover .sectionthree1{
+      transition: 2s;
+      position:relative;
+      z-index: 4;
+      margin-top: 250px;
+      box-shadow: 4px 4px #000000;
+}
+
   .section-three, .section3r{
     position: absolute;
     width: 100%;
@@ -651,10 +712,12 @@ aside{
   }
   
   .section3r{
-    background-color: dodgerblue;
+    background:linear-gradient(-45deg, #193431,#364742,#85663D,#16034E, #03000A);
     color: white;
     transform: rotateY(180deg);
     border-radius: 40px;
+    padding-top: 20px;
+    box-sizing: border-box;
   }
 .wrapper{
     display:flex;
@@ -685,6 +748,10 @@ aside{
     z-index: 9;
     margin-top: 80px;
     margin-left: 452px;
+    box-shadow: 3px 6px black,3px 6px black;
+}
+.write-up:hover{
+    transform: scale(1.1);
 }
 .top-right-image{ 
     border: 1px ;
@@ -696,7 +763,8 @@ aside{
 
 }
 .top-right-image:hover{
-    transform: rotate(-180deg);
+    transform: rotate(359deg);
+    animation: 4s infinite linear;
 }
 .center-text{ 
     border: 1px ;
@@ -716,7 +784,8 @@ aside{
     
 }
 .bottom-left-image:hover{
-    transform: rotate(-180deg);
+    transform: rotate(359deg);
+    animation: .1s infinite linear;
 }
 footer{
     height: 350px;
@@ -860,7 +929,7 @@ footer{
     background: none;
     font-size: 17px;
     color:white;
-    margin-top:20px;
+    margin-top: 4px;
     text-decoration: none;
     font-weight: lighter;
     letter-spacing: 2px;
@@ -885,7 +954,7 @@ footer{
     background: none;
     font-size: 17px;
     color:white;
-    margin-top: 20px;
+    margin-top: 4px;
     text-decoration: none;
     font-weight: lighter;
     letter-spacing: 2px;
@@ -910,7 +979,7 @@ footer{
     background: none;
     font-size: 17px;
     color:white;
-    margin-top: 20px;
+    margin-top: 4px;
     text-decoration: none;
     font-weight: lighter;
     letter-spacing: 2px;
@@ -980,7 +1049,7 @@ footer{
     height: 40px;
     width:40px;
 }
-.fr1 .search{
+.fr1 #search{
     height: 30px;
     width: 80px;
     border-radius: 50px;
