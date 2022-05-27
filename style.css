@@ -159,7 +159,7 @@ aside{
 .pic1{
     height: 100%;
     width: 50%;
-    background: linear-gradient(rgba(0, 0, 0, 0.633),rgba(0, 0, 0, 0.633)),url(circle.jpg);
+    background:none;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -169,11 +169,11 @@ aside{
 }
 .spin{
     position:absolute;
-    background:url(circle.jpg);
-    margin-left:147px;
+    background:linear-gradient(rgba(0, 0, 0, 0.534),rgba(0, 0, 0, 0.534)),url(this.jpg);
+    margin-left:77px;
     height: 400px;
     width:400px;
-    top: 143px;
+    top: 63px;
     border:1px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -193,17 +193,18 @@ aside{
 }
 .spin1{
     position:absolute;
-    background:url(circle.jpg);
-    margin-left:-450px;
-    height: 1600px;
-    width:1600px;
-    top: -450px;
+    background:linear-gradient(rgba(0, 0, 0, 0.534),rgba(0, 0, 0, 0.534)),url(see.jpg);
+    margin-left:-250px;
+    height: 1000px;
+    width:1000px;
+    top: -250px;
     border:1px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     animation: rotating 2s infinite linear;
-    border-radius: 1600px;
+    border-radius: 1400px;
+    opacity: 0.7;
 }
 @keyframes rotating 
 {
@@ -296,9 +297,9 @@ aside{
     box-sizing: border-box;
     border-radius: 20px;
     font-size: 20px;
-    margin-top: 100px;
+    margin-top: 60px;
     font-weight: bold;
-    margin-left: 210px;
+    margin-left: 160px;
     text-align: center;
     padding-top: 3px;
 }
@@ -384,7 +385,7 @@ aside{
     width: 300px;
     border-radius: 20px;
     background-position: center;
-    box-shadow: 4px 4px 6px #000000;
+    box-shadow: 0px 0px, -4px -4px 6px #000000;
 }
 .description2{
     height: 50%;
@@ -441,7 +442,7 @@ aside{
 .next-big-thing{
     height: 800px;
     width:100%;
-    background: url(hui.jpg);
+    background:linear-gradient(rgba(0, 0, 0, 0.534),rgba(0, 0, 0, 0.534)),url(hui.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -500,12 +501,14 @@ aside{
     bottom:70px;
     left: 70px;
     position: relative;
-    background:white;
+    background: url(gamingpad.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     z-index: 3;
+    animation: guy 2s linear;
     box-shadow: 0px 0px black, -4px -4px black;
+    animation-fill-mode: backwards;
 }
 .sectionone1 img{
     background: none;
@@ -530,11 +533,11 @@ aside{
     width: 100%;
     height: 100%;
     text-align: center;
-    transition: transform 3s;
+    transition: transform 0.8s;
     transform-style: preserve-3d;
     background:none;
-    position:relative;
-    top:-105px;
+    position:fixed;
+    top:0;
 
   }
   
@@ -544,15 +547,37 @@ aside{
     top:0px;
   }
   .rotate1:hover .sectionone1{
-      transition: 2s;
+      animation: text 2s;
       position:relative;
       z-index: 4;
-      margin-top: 250px;
       box-shadow: 4px 4px #000000;
+      animation-play-state: running;
+      animation-fill-mode: forwards;
+}
+@keyframes text{
+    from{
+        margin-top:10px;
+
+    }
+    to{
+        margin-top:270px;
+    }
 }
 .rotate1:hover::after .sectionone1{
-    transition: 2s;
-}  
+    animation: try 3s;
+    position:relative;
+    z-index: 4;
+    box-shadow: 4px 4px #000000;
+}
+@keyframes guy{
+    from{
+        margin-top:270px;
+
+    }
+    to{
+        margin-top:10px;
+    }
+}
   .section-one, .section1r{
     position: absolute;
     width: 100%;
@@ -568,7 +593,23 @@ aside{
     border-radius: 40px;
     padding-top: 20px;
     box-sizing: border-box;
+    position: absolute;
   }
+
+
+
+  .section-two{
+    height: 250px;
+    width: 250px;
+    background: linear-gradient(-45deg, #FFFFFF, #981196, #439292, #05360A);
+    margin:auto;
+    border-radius: 40px;
+    margin-top: 0;
+}
+.section2r:hover{
+    background:linear-gradient(-45deg, #193431,#364742,#85663D,#16034E, #03000A);
+    
+}
 .sectiontwo1{
     border:3px solid #9B1196;
     border-radius: 100px;
@@ -577,12 +618,15 @@ aside{
     bottom:70px;
     left: 70px;
     position: relative;
-    background: white;
+    background:  url(gamingpad.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     z-index: 3;
+    animation: guy 2s linear;
     box-shadow: 0px 0px black, -4px -4px black;
+    animation-fill-mode: backwards;
+    opacity: 1;
 }
 .sectiontwo1 img{
     background: none;
@@ -610,8 +654,8 @@ aside{
     transition: transform 0.8s;
     transform-style: preserve-3d;
     background:none;
-    position:relative;
-    top:-105px;
+    position:fixed;
+    top:0;
 
   }
   
@@ -621,11 +665,36 @@ aside{
     top:0px;
   }
   .rotate2:hover .sectiontwo1{
-      transition: 2s;
+      animation: text 2s;
       position:relative;
       z-index: 4;
-      margin-top: 250px;
       box-shadow: 4px 4px #000000;
+      animation-play-state: running;
+      animation-fill-mode: forwards;
+}
+@keyframes text{
+    from{
+        margin-top:10px;
+
+    }
+    to{
+        margin-top:270px;
+    }
+}
+.rotate2:hover::after .sectiontwo1{
+    animation: try 3s;
+    position:relative;
+    z-index: 4;
+    box-shadow: 4px 4px #000000;
+}
+@keyframes guy{
+    from{
+        margin-top:270px;
+
+    }
+    to{
+        margin-top:10px;
+    }
 }
   .section-two, .section2r{
     position: absolute;
@@ -642,21 +711,40 @@ aside{
     border-radius: 40px;
     padding-top: 20px;
     box-sizing: border-box;
+    position: absolute;
   }
+
+
+
+
+.section-three{
+    height: 250px;
+    width: 250px;
+    background: linear-gradient(-45deg, #FFFFFF, #981196, #439292, #05360A);
+    margin:auto;
+    border-radius: 40px;
+    margin-top: 0;
+}
+.section3r:hover{
+    background:linear-gradient(-45deg, #193431,#364742,#85663D,#16034E, #03000A);
+    
+}
 .sectionthree1{
     border:3px solid #9B1196;
-    border-radius: 95px;
+    border-radius: 100px;
     height:100px;
     width: 100px;
     bottom:70px;
     left: 70px;
     position: relative;
-    background: white;
+    background:  url(gamingpad.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     z-index: 3;
+    animation: guy 2s linear;
     box-shadow: 0px 0px black, -4px -4px black;
+    animation-fill-mode: backwards;
 }
 .sectionthree1 img{
     background: none;
@@ -683,10 +771,9 @@ aside{
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-    background: none;
-    border-radius: 40px;
-    position:relative;
-    top:-105px;
+    background:none;
+    position:fixed;
+    top:0;
 
   }
   
@@ -696,13 +783,37 @@ aside{
     top:0px;
   }
   .rotate3:hover .sectionthree1{
-      transition: 2s;
+      animation: text 2s;
       position:relative;
       z-index: 4;
-      margin-top: 250px;
       box-shadow: 4px 4px #000000;
+      animation-play-state: running;
+      animation-fill-mode: forwards;
 }
+@keyframes text{
+    from{
+        margin-top:10px;
 
+    }
+    to{
+        margin-top:270px;
+    }
+}
+.rotate3:hover::after .sectionthree1{
+    animation: try 3s;
+    position:relative;
+    z-index: 4;
+    box-shadow: 4px 4px #000000;
+}
+@keyframes guy{
+    from{
+        margin-top:270px;
+
+    }
+    to{
+        margin-top:10px;
+    }
+}
   .section-three, .section3r{
     position: absolute;
     width: 100%;
@@ -718,6 +829,7 @@ aside{
     border-radius: 40px;
     padding-top: 20px;
     box-sizing: border-box;
+    position: absolute;
   }
 .wrapper{
     display:flex;

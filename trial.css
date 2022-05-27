@@ -1,0 +1,117 @@
+*{
+    background:red;
+}
+.section-two{
+    height: 250px;
+    width: 250px;
+    background: linear-gradient(-45deg, #FFFFFF, #981196, #439292, #05360A);
+    margin:auto;
+    border-radius: 40px;
+    margin-top: 0;
+}
+.section2r:hover{
+    background:linear-gradient(-45deg, #193431,#364742,#85663D,#16034E, #03000A);
+    
+}
+.sectiontwo1{
+    border:3px solid #9B1196;
+    border-radius: 100px;
+    height:100px;
+    width: 100px;
+    bottom:70px;
+    left: 70px;
+    position: relative;
+    background: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 3;
+    animation: guy 2s linear;
+    box-shadow: 0px 0px black, -4px -4px black;
+    animation-fill-mode: backwards;
+}
+.sectiontwo1 img{
+    background: none;
+    height:90px;
+    width:90px;
+    margin-left: 4px;
+}
+.rotate2{
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    margin:auto;
+    border-radius: 40px;
+    margin-top: -1px;
+    box-shadow: 3px 3px black;
+  }
+  
+  .inner2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    background:none;
+    position:fixed;
+    top:0;
+
+  }
+  
+  .rotate2:hover .inner2 {
+    transform: rotateY(180deg);
+    position: absolute;
+    top:0px;
+  }
+  .rotate2:hover .sectiontwo1{
+      animation: text 2s;
+      position:relative;
+      z-index: 4;
+      box-shadow: 4px 4px #000000;
+      animation-play-state: running;
+      animation-fill-mode: forwards;
+}
+@keyframes text{
+    from{
+        margin-top:10px;
+
+    }
+    to{
+        margin-top:270px;
+    }
+}
+.rotate2:hover::after .sectiontwo1{
+    animation: try 3s;
+    position:relative;
+    z-index: 4;
+    box-shadow: 4px 4px #000000;
+}
+@keyframes guy{
+    from{
+        margin-top:270px;
+
+    }
+    to{
+        margin-top:10px;
+    }
+}
+  .section-two, .section2r{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .section2r{
+    background:linear-gradient(-45deg, #193431,#364742,#85663D,#16034E, #03000A);
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 40px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    position: absolute;
+  }
