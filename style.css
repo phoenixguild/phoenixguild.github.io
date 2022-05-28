@@ -179,7 +179,7 @@ aside{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    animation: rotation 2s infinite linear;
+    animation: rotation .1ms infinite linear;
     border-radius: 400px;
     z-index: 9;
 }
