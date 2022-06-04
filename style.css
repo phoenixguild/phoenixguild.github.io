@@ -261,6 +261,7 @@ section{
     font-size: 40px;
     text-align: center;
     text-transform: uppercase;
+    color: white;
   }
   section .text-container .text-box{
   
@@ -772,7 +773,7 @@ section{
     justify-content: center;
     align-items: center;
     background: none;
-    width: 100%;
+    width: 60%;
     border:1px;
 }
 section:nth-child(1){
@@ -792,7 +793,6 @@ section .containing{
     background-size: cover;
     width: 90%;
     border: 1px;
-    position: absolute;
     margin: auto;
 }
 section h1{
@@ -805,6 +805,8 @@ section h2{
     text-align: center;
     text-transform: uppercase;
     color:#50b8dc;
+    width:100%;
+    padding-left: 10px;
 }
 section .text-container .text-box{
   
@@ -817,6 +819,7 @@ section .text-container .text-box h3{
 }
 section .text-container{
     flex-direction: column;
+    width:80%;
 }
 .reveal{
     position: relative;
@@ -846,7 +849,8 @@ button {
  cursor: pointer;
  font-weight: bold;
  margin-bottom: 70px;
- width:100%;
+ margin-left: 90px;
+ width:80%;
 }
 
 button:hover {
