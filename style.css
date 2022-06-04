@@ -517,8 +517,8 @@ html{
 }
 .cover{
     height:100vh;
-    width: 100;
-    z-index: -11;
+    width: 100%;
+    z-index: 70;
     position: absolute;
     display: grid;
     grid-template-columns: 1fr 1fr ;
@@ -758,7 +758,7 @@ a:hover{
     width: 100%;
     border:1px;
     margin: auto;
-    background-size: 35vh 80%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin-top: 100px;
@@ -787,6 +787,7 @@ section .containing{
     margin: 100px;
     background:transparent;
     background-size: cover;
+    width: 100%;
 }
 section h1{
     font-size: 25px;
