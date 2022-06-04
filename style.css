@@ -724,7 +724,7 @@ main{
     height:auto;
     margin: auto;
     padding:5px;
-    margin-left:200px;
+    margin-left:150px;
     width:max-content;
     border:2px solid rgb(101, 112, 138);
     padding-top: 10px;
@@ -793,7 +793,7 @@ section .containing{
     width: 100%;
     border: 1px;
     position: absolute;
-    margin-left: -50px;
+    margin-left: -130px;
 }
 section h1{
     font-size: 25px;
