@@ -773,6 +773,7 @@ section{
     align-items: center;
     background: none;
     width: 100%;
+    border:1px solid white;
 }
 section:nth-child(1){
     color: transparent;
@@ -787,10 +788,10 @@ section:nth-child(1){
 
 }
 section .containing{
-    margin: 100px;
     background:transparent;
     background-size: cover;
     width: 100%;
+    border: 1px solid red;
 }
 section h1{
     font-size: 25px;
