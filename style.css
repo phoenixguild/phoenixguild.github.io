@@ -7,6 +7,9 @@ body{
     color:white;
     overflow-x: hidden;
 }
+html{
+    scroll-behavior: smooth;
+}
 .cover{
     height:100vh;
     width: 100%;
@@ -509,6 +512,9 @@ body{
     color:white;
     overflow-x: hidden;
 }
+html{
+    scroll-behavior: smooth;
+}
 .cover{
     height:100vh;
     width: 100;
@@ -565,11 +571,11 @@ body{
     width:100%;
     margin:0 0 0 0;
     padding: 0 0 0 0;
-    border:2px solid white;
+    border:2px;
     height: auto;
 }
 .heading{
-    width: 100%;
+    width: 100vw;
     height: 7vh;
     border: 1px solid white;
     position:fixed;
@@ -701,13 +707,14 @@ main{
     margin: auto;
     padding:5px;
     margin-left: 0;
-    width:calc(max-content + 70px);
+    width:auto;
     border:2px solid rgb(101, 112, 138);
     padding-top: 10px;
     border-radius: 10px;
     font-size: 15px;
     box-sizing: border-box;
     text-align: center;
+    white-space:nowrap;
     color:#47cd76;
     background: linear-gradient(to left, rgba(0, 0, 0, 0.377),rgba(255, 255, 255, 0.411));
 }
@@ -724,6 +731,8 @@ main{
     box-sizing: border-box;
     text-align: center;
     color:#47cd76;
+    margin-right: 15px;
+    white-space: nowrap;
     background: linear-gradient(to left, rgba(0, 0, 0, 0.377),rgba(255, 255, 255, 0.411));
 }
 a{
@@ -748,7 +757,7 @@ a:hover{
     width: 50%;
     border:1px;
     margin: auto;
-    background-size: 35vh 100%;
+    background-size: 35vh 80%;
     background-position: center;
     background-repeat: no-repeat;
     margin-top: 100px;
@@ -783,9 +792,10 @@ section h1{
     background-color: transparent;
 }
 section h2{
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     text-transform: uppercase;
+    color:#50b8dc;
 }
 section .text-container .text-box{
   
@@ -896,8 +906,6 @@ button:hover span:nth-child(4) {
 }
 
 button:active {
- background: #ae00af;
- background: linear-gradient(to top right, #ae00af, #001eff);
  color: #bfbfbf;
  box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #ae00ff;
  transition: 0.1s;
