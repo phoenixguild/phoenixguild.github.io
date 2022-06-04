@@ -793,7 +793,7 @@ section .containing{
     width: 100%;
     border: 1px;
     position: absolute;
-    margin-left: -100px;
+    margin-left: -50px;
 }
 section h1{
     font-size: 25px;
