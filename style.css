@@ -792,6 +792,8 @@ section .containing{
     background-size: cover;
     width: 100%;
     border: 1px;
+    position: absolute;
+    margin-left: -100px;
 }
 section h1{
     font-size: 25px;
