@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EnGuard Finance</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EnGuard Finance</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
 
@@ -19,19 +19,34 @@
             <div class="pic3"></div>
             <div class="pic4"></div>
         </div>
-    <div id="header">
+    <div class="heading" id="header">
         <div class="logo"><a href="#"><span>En</span>GUARD</a></div>
-        <div class="four-links">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li style="margin-right:10px ;"><a href="#">Contact</a></li>
-            </ul>
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Connect Wallet</a></li>
+        </ul>
+        <div id="myNav" class="overlay">
+
+          <!-- Button to close the overlay navigation -->
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+          <!-- Overlay content -->
+          <div class="overlay-content">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">FAQ</a>
+            <a href="#">Connect Wallet</a>
+          </div>
+        
         </div>
+        <span id="remove" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
     </div>
     <main>
         <div class="writeup-1">
+          <div class="show">En<span style="font-size:20px; color:#50b8dc;">Guard</span><span style=" font-size:20px; color:#50b8dc; display:block ; padding-left: 30px;">Finance</span></div>
             <div class="write">
                 <p>Built on <span>Amechain</span></p>
                 <p class="paragraph">the <span>First</span> decentralized</p>
@@ -40,7 +55,10 @@
             <div class="second-write">
                 <p><span>EnGuard Finance</span> is the <span>gateway</span> to innovative products built on Amechain's <span>Quantum Resistant</span> EVM-compatible Blockchain</p>
             </div>
+            <div class="connection">
+              <div class="get-started">Get Started</div>
             <div class="connect"><a href="#">Connect Wallet</a></div>
+            </div>
         </div>
         <div class="side-pic"></div>
     </main>
@@ -54,7 +72,7 @@
                               <span></span>
                               <span></span>
                               <span></span> 
-                              <div class="inside">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, commodi.</div>  
+                              <div class="inside">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt culpa perferendis quasi quo illum odit necessitatibus officiis blanditiis nisi quod.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, commodi.</div>  
                               <div class="wrap">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur esse atque, eum modi numquam ea placeat deserunt accusantium odit doloremque natus necessitatibus, delectus quia magni nulla quas repellat dolore. Cupiditate?</div>
                             </button>
                         </div>
@@ -64,7 +82,7 @@
                               <span></span>
                               <span></span>
                               <span></span> 
-                              <div class="inside">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, commodi.</div>  
+                              <div class="inside">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe fugit temporibus deleniti adipisci illo, quidem aspernatur suscipit modi officia error.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, commodi.</div>  
                               <div class="wrap">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur esse atque, eum modi numquam ea placeat deserunt accusantium odit doloremque natus necessitatibus, delectus quia magni nulla quas repellat dolore. Cupiditate?</div>
                             </button>
                         </div>
@@ -74,7 +92,7 @@
                               <span></span>
                               <span></span>
                               <span></span> 
-                              <div class="inside">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, commodi.</div>  
+                              <div class="inside">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, eveniet. Laboriosam iure saepe ducimus sint odio ut delectus optio ratione.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, commodi.</div>  
                               <div class="wrap">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur esse atque, eum modi numquam ea placeat deserunt accusantium odit doloremque natus necessitatibus, delectus quia magni nulla quas repellat dolore. Cupiditate?</div>
                             </button>
                         </div>
@@ -83,10 +101,17 @@
                   </section>
                   <footer>
                       
-                  </footer>
-      <script>
-          window.onscroll = function() {scrollFunction()};
+                  </footer>      
+                  <script>
+        function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
 
+/* Close */
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+          window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("header").style.width = "94vw";
