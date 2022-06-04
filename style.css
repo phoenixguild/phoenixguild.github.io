@@ -805,7 +805,7 @@ section h2{
     text-align: center;
     text-transform: uppercase;
     color:#50b8dc;
-    width:100%;
+    width:100vw;
     padding-left: 10px;
 }
 section .text-container .text-box{
@@ -849,8 +849,9 @@ button {
  cursor: pointer;
  font-weight: bold;
  margin-bottom: 70px;
- margin-left: 90px;
- width:80%;
+ margin-left: 5px;
+ width:95vw;
+ z-index: 5;
 }
 
 button:hover {
