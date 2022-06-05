@@ -69,10 +69,9 @@ html{
     height: auto;
 }
 #header{
-    width: 85vw;
+    width: 95%;
     height: 9vh;
     border:1px solid white;
-    margin-top: 40px;
     border-radius:5px;
     display: flex;
     justify-content: space-between;
@@ -85,6 +84,7 @@ html{
 #header ul{
     display:flex;
     width: 40%;
+    margin-right: 20px;
     justify-content: space-between;
     list-style-type: none;
 }
@@ -92,7 +92,7 @@ html{
     height: 100%;
     width: 20%;
     border: 1px;
-    margin-left: 1%;
+    margin-right:5px;
     background:none;
     font-weight: bold;
     color: #50b8dc;
@@ -644,7 +644,7 @@ html{
     margin:10px;
 }
 main{
-    height:100vh;
+    height:130vh;
     width:100%;
     margin:0;
     padding: 0;
@@ -725,7 +725,6 @@ main{
     height:auto;
     margin: auto;
     padding:5px;
-    margin-left:150px;
     width:max-content;
     border:2px solid rgb(101, 112, 138);
     padding-top: 10px;
@@ -734,7 +733,6 @@ main{
     box-sizing: border-box;
     text-align: center;
     color:#47cd76;
-    margin-right: 15px;
     white-space: nowrap;
     background: linear-gradient(to left, rgba(0, 0, 0, 0.377),rgba(255, 255, 255, 0.411));
 }
@@ -807,6 +805,7 @@ section h2{
     color:#50b8dc;
     width:100vw;
     padding-left: 10px;
+    white-space: nowrap;
 }
 section .text-container .text-box{
   
