@@ -518,12 +518,14 @@ html{
 }
 .cover{
     height:100vh;
-    width: 100%;
+    width: 97%;
     z-index: 70;
     position: absolute;
     display: grid;
     grid-template-columns: 1fr 1fr ;
     grid-template-rows: 1fr 1fr;
+    border:1px;
+    overflow-x: hidden;
 }
 .cover img{
     z-index:inherit;
@@ -533,7 +535,7 @@ html{
     background: url(IMAGES/Green.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: right 40px bottom 40px;
+    background-position: right 1px bottom 40px;
 
 }
 .pic2{
@@ -541,7 +543,7 @@ html{
     background: url(IMAGES/Green.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: left 40px bottom 40px;
+    background-position: left 1px bottom 40px;
 
 }
 .pic3{
@@ -549,7 +551,7 @@ html{
     background: url(IMAGES/Green.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: right 40px top 40px;
+    background-position: right 1px top 40px;
     animation: animate 3s linear infinite;
 
 }
@@ -559,7 +561,7 @@ html{
     background: url(IMAGES/Green.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: left 20px top 40px;
+    background-position: left 1px top 40px;
 
 }
 .img5{
@@ -569,11 +571,12 @@ html{
     transform: scaleY(-1);
 }
 .container{
-    width:100vw;
+    width:97vw;
     margin:0 0 0 0;
     padding: 0 0 0 0;
     border:2px;
     height: auto;
+    border:1px;
 }
 .heading{
     width: 96vw;
@@ -648,6 +651,8 @@ main{
     width:100%;
     margin:0;
     padding: 0;
+    border:1px;
+    overflow-x: hidden;
 }
 .writeup-1{
     box-sizing: border-box;
@@ -756,7 +761,7 @@ a:hover{
 .side-pic{
     background-image: url(IMAGES/landing_launch\ \(2\).svg);
     height: 40vh;
-    width: 100%;
+    width: 97%;
     border:1px;
     margin: auto;
     background-size: 50% 60%;
@@ -772,8 +777,9 @@ section{
     justify-content: center;
     align-items: center;
     background: none;
-    width: 60%;
+    width: 97%;
     border:1px;
+    overflow-x: hidden;
 }
 section:nth-child(1){
     color: transparent;
