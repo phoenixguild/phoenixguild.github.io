@@ -811,6 +811,7 @@ section h2{
     text-transform: uppercase;
     color:#50b8dc;
     width:100vw;
+    padding-left: 10px;
     white-space: nowrap;
 }
 section .text-container .text-box{
@@ -838,7 +839,7 @@ section .text-container{
     opacity: 1;
   }
 button {
- height:30vh;
+ height:14vh;
  display: flex;
  position: relative;
  margin:0;
