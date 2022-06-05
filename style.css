@@ -839,7 +839,7 @@ section .text-container{
     opacity: 1;
   }
 button {
- height:14vh;
+ height:30vh;
  display: flex;
  position: relative;
  margin:0;
