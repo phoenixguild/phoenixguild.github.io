@@ -576,7 +576,7 @@ html{
     height: auto;
 }
 .heading{
-    width: 100vw;
+    width: 96vw;
     height: 7vh;
     border: 1px solid white;
     position:fixed;
@@ -704,6 +704,7 @@ main{
     width:100%;
     justify-content: space-between;
     border:1px;
+    margin:0 0 0 15px;
 }
 .get-started{
     height:auto;
@@ -849,7 +850,7 @@ button {
  font-weight: bold;
  margin-bottom: 70px;
  margin-left: 5px;
- width:95vw;
+ width:90vw;
  z-index: 5;
 }
 
