@@ -27,7 +27,7 @@ html{
     background: url(IMAGES/Green.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: right 40px bottom 40px;
+    background-position: right 60px bottom 40px;
 
 }
 .pic2{
@@ -35,7 +35,7 @@ html{
     background: url(IMAGES/Green.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: left 40px bottom 40px;
+    background-position: left 140px bottom 40px;
 
 }
 .pic3{
@@ -43,7 +43,7 @@ html{
     background: url(IMAGES/Green.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: right 40px top 40px;
+    background-position: right 60px top 40px;
     animation: animate 3s linear infinite;
 
 }
@@ -53,7 +53,7 @@ html{
     background: url(IMAGES/Green.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: left 20px top 40px;
+    background-position: left 140px top 40px;
 
 }
 .img5{
@@ -78,6 +78,7 @@ html{
     background: rgba(255, 255, 255, 0.116);
     transition: 0.2s;
     position: fixed;
+    margin: auto;
     z-index: 200;
 
 }
@@ -123,6 +124,7 @@ main{
     height:100vh;
     width:85vw;
     display: flex;
+    margin: 0 0 0 100px;
 }
 .writeup-1{
     box-sizing: border-box;
@@ -412,13 +414,795 @@ button:hover .inside{
 button:hover .wrap{
     color:rgb(10, 10, 20);
 }
-footer{
-    height: 70vh;
-    width:85vw;
+.cont{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    height: 170vh;
+    grid-template-rows: 1fr 1fr;
+    width:80%;
     margin:auto;
-    background: linear-gradient(-45deg,#081155 10%, rgb(11, 180, 110)90% );
+    gap:40px;
+  }
+
+  .containor{
+    height:1px;
+    width:400px;
+    border-top-left-radius: 60px;
+    border-left:3px solid rgb(104, 114, 104);
+    animation: growing 5s linear 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes growing{
+    0%{
+      height:1px;
+    }
+    100%{
+      height: 400px;
+    }
+  }
+  .geeks{
+    height:auto;
+    width:1px;
+    margin-top:50px;
+    border-bottom:2px solid rgb(104, 114, 104);
+    animation: grow 7s linear 1;
+    animation-fill-mode: forwards;
+    font-size: 25px;
+    font-family: Poppins;
+    white-space: nowrap;
+    padding:5px;
+  }
+  @keyframes grow{
+    0%{
+      width:1px;
+    }
+    100%{
+      width: 400px;
+    }
+  }
+  .geeks1{
+    height:auto;
+    width:1px;
+    border-bottom:2px solid rgb(104, 114, 104);
+    animation: grow 8s linear 1;
+    margin-top:40px;
+    animation-fill-mode: forwards;
+    font-size: 25px;
+    white-space: nowrap;
+    padding:5px;
+  }
+  @keyframes grow{
+    0%{
+      width:1px;
+    }
+    100%{
+      width: 400px;
+    }
+  }
+  .geeks2{
+    height:auto;
+    width:1px;
+    background:none;
+    border-bottom:2px solid rgb(104, 114, 104);
+    animation: grow 9s linear 1;
+    animation-fill-mode: forwards;
+    font-size: 25px;
+    white-space: nowrap;
+    margin-top:40px;
+    margin-bottom: 50px;
+    padding:5px;
+  }
+  @keyframes grow{
+    0%{
+      width:1px;
+    }
+    100%{
+      width: 400px;
+    }
+  }
+  .geeks3{
+    height:auto;
+    width:1px;
+    background:none;
+    border-bottom:2px solid rgb(104, 114, 104);
+    animation: grow 10s linear 1;
+    animation-fill-mode: forwards;
+    font-size: 25px;
+    margin-top:40px;
+    white-space: nowrap;
+    margin-bottom: 50px;
+    padding:5px;
+  }
+  @keyframes grow{
+    0%{
+      width:1px;
+    }
+    100%{
+      width: 400px;
+    }
+  }
+  .span1{
+    opacity:0;
+    animation: appear 15s linear 1;
+    animation-fill-mode: forwards;
+  }
+  .styling{
+    position:relative; 
+    padding-top: 50px; 
+    margin-left: -30px; 
+    font-size: 40px;
+    background-color:#04182f;
+  }
+  @keyframes appear {
+    0%{
+      opacity:0;
+    }
+    20%{
+      opacity:0.2;
+    }
+    50%{
+      opacity:0.5;
+    }
+    70%{
+      opacity:0.7;
+    }
+    100%{
+      opacity:1;
+    }
+  }
+  .white{
+    font-size: 80px; 
+    text-align:center;
+  }
+ 
+.card,.card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10,.card11{
+    width: 190px;
+    height: 254px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.5s;
+   }
+   
+   .card:hover,.card1:hover,.card2:hover,.card3:hover,.card4:hover,.card5:hover,.card6:hover,.card7:hover,.card8:hover,.card9:hover,.card10:hover,.card11:hover{
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.623);
+    background-color: #4bb8ff;
+   }
+   
+  .blob {
+    height: 10px;
+    width: 75%;
+    border-radius: 0 0 30px 30px;
+    margin: 0 auto;
+    background-color: #4bb8ff;
+    visibility: visible;
+    transition: all 0.3s;
+   }
+   
+   .card:hover .blob,.card1:hover .blob,.card2:hover .blob,.card3:hover .blob,.card4:hover .blob,.card5:hover .blob,.card6:hover .blob,.card7:hover .blob,.card8:hover .blob,.card9:hover .blob,.card10:hover .blob,.card11:hover .blob{
+    height: 0;
+   }
+   .card .img {
+    display: flex;
+    margin: 30px auto 10px auto;
+    width: 70px;
+    height: 70px;
+    background:url(IMAGES/profile9.png);
+    background-size: cover;
+    border-radius: 50%;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+   }
+   
+   .card:hover .img {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px 0 0;
+    margin: 0 auto;
+    background:url(IMAGES/profile9.png);
+    background-size: cover;
+    z-index: 99999;
+   }
+   .card1 .img {
+    display: flex;
+    margin: 30px auto 10px auto;
+    width: 70px;
+    height: 70px;
+    background:url(IMAGES/nft-image.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+   }
+   
+   .card1:hover .img {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px 0 0;
+    margin: 0 auto;
+    background:url(IMAGES/nft-image.jpg);
+    background-size: cover;
+    z-index: 99999;
+   }
+   .card2 .img {
+    display: flex;
+    margin: 30px auto 10px auto;
+    width: 70px;
+    height: 70px;
+    background:url(IMAGES/profile8.png);
+    background-size: cover;
+    border-radius: 50%;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+   }
+   
+   .card2:hover .img {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px 0 0;
+    margin: 0 auto;
+    background:url(IMAGES/profile8.png);
+    background-size: cover;
+    z-index: 99999;
+   }
+   .card3 .img {
+    display: flex;
+    margin: 30px auto 10px auto;
+    width: 70px;
+    height: 70px;
+    background:url(IMAGES/profile7.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+   }
+   
+   .card3:hover .img {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px 0 0;
+    margin: 0 auto;
+    background:url(IMAGES/profile7.jpg);
+    background-size: cover;
+    z-index: 99999;
+   }
+   .card4 .img {
+    display: flex;
+    margin: 30px auto 10px auto;
+    width: 70px;
+    height: 70px;
+    background:url(IMAGES/profile6.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+   }
+   
+   .card4:hover .img {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px 0 0;
+    margin: 0 auto;
+    background:url(IMAGES/profile6.jpg);
+    background-size: cover;
+    z-index: 99999;
+   }
+   .card5 .img {
+    display: flex;
+    margin: 30px auto 10px auto;
+    width: 70px;
+    height: 70px;
+    background:url(IMAGES/profile5.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+   }
+   
+   .card5:hover .img {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px 0 0;
+    margin: 0 auto;
+    background:url(IMAGES/profile5.jpg);
+    background-size: cover;
+    z-index: 99999;
+   }
+   .card6 .img {
+    display: flex;
+    margin: 30px auto 10px auto;
+    width: 70px;
+    height: 70px;
+    background:url(IMAGES/profile4.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+   }
+   
+   .card6:hover .img {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px 0 0;
+    margin: 0 auto;
+    background:url(IMAGES/profile4.jpg);
+    background-size: cover;
+    z-index: 99999;
+   }
+   .card7 .img {
+    display: flex;
+    margin: 30px auto 10px auto;
+    width: 70px;
+    height: 70px;
+    background:url(IMAGES/profile3.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+   }
+   
+   .card7:hover .img {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px 0 0;
+    margin: 0 auto;
+    background:url(IMAGES/profile3.jpg);
+    background-size: cover;
+    z-index: 99999;
+   }
+   .card8 .img {
+    display: flex;
+    margin: 30px auto 10px auto;
+    width: 70px;
+    height: 70px;
+    background:url(IMAGES/profile2.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+   }
+   
+   .card8:hover .img {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px 0 0;
+    margin: 0 auto;
+    background:url(IMAGES/profile2.jpg);
+    background-size: cover;
+    z-index: 99999;
+   }
+   .card9 .img {
+    display: flex;
+    margin: 30px auto 10px auto;
+    width: 70px;
+    height: 70px;
+    background:url(IMAGES/profile11.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+   }
+   
+   .card9:hover .img {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px 0 0;
+    margin: 0 auto;
+    background:url(IMAGES/profile11.jpg);
+    background-size: cover;
+    z-index: 99999;
+   }
+   .card10 .img {
+    display: flex;
+    margin: 30px auto 10px auto;
+    width: 70px;
+    height: 70px;
+    background:url(IMAGES/profile10.png);
+    background-size: cover;
+    border-radius: 50%;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+   }
+   
+   .card10:hover .img {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px 0 0;
+    margin: 0 auto;
+    background:url(IMAGES/profile10.png);
+    background-size: cover;
+    z-index: 99999;
+   }
+   .card11 .img {
+    display: flex;
+    margin: 30px auto 10px auto;
+    width: 70px;
+    height: 70px;
+    background:url(IMAGES/profile1.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+   }
+   
+   .card11:hover .img {
+    width: 100%;
+    height: 70%;
+    border-radius: 10px 0 0;
+    margin: 0 auto;
+    background:url(IMAGES/profile1.jpg);
+    background-size: cover;
+    z-index: 99999;
+   }
+   
+   .card h2,.card1 h2,.card2 h2,.card3 h2,.card4 h2,.card5 h2,.card6 h2,.card7 h2,.card8 h2,.card9 h2,.card10 h2,.card11 h2 {
+    padding: 15px 10px;
+    font-size: 25px;
+    transition: all 0.1s;
+    z-index: -99;
+    line-height: 17px;
+   }
+   
+   .card span,.card1 span,.card2 span,.card3 span,.card4 span,.card5 span,.card6 span,.card7 span,.card8 span,.card9 span,.card10 span,.card11 span{
+    font-size: 18px;
+   }
+   
+   .card:hover h2,.card1:hover h2,.card2:hover h2,.card3:hover h2,.card4:hover h2,.card5:hover h2,.card6:hover h2,.card7:hover h2,.card8:hover h2,.card9:hover h2,.card10:hover h2,.card11:hover h2 {
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    transition: all 0.5s;
+   }
+   
+   .card>p,.card1>p,.card2>p,.card3>p,.card4>p,.card5>p,.card6>p,.card7>p,.card8>p,.card9>p,.card10>p,.card11>p {
+    opacity: 0;
+   } 
+   .card:hover>p,.card1:hover>p,.card2:hover>p,.card3:hover>p,.card4:hover>p,.card5:hover>p,.card6:hover>p,.card7:hover>p,.card8:hover>p,.card9:hover>p,.card10:hover>p,.card11:hover>p{
+    opacity: 1;
+   }
+   .containment {
+    overflow: hidden;
+    display: flex;
+    height: 500px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  /*
+  .containement:hover .card1,.container:hover .card2,.container:hover .card3,.container:hover .card4,.container:hover .card5,.container:hover .card6,.container:hover .card7,.container:hover .card8,.container:hover .card9,.container:hover .card10,.container:hover .card11{
+    animation-play-state: paused;
+  }*/
+  .card:hover p img,.card1:hover p img,.card2:hover p img,.card3:hover p img,.card4:hover p img,.card5:hover p img,.card6:hover p img,.card7:hover p img,.card8:hover p img,.card9:hover p img,.card10:hover p img,.card11:hover p img{
+    height:60%;
+    width:10%;
+    padding: 5px;
+  }
+  
+  .card,.card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10,.card11 {
+    height: 400px;
+    min-width: 300px;
+    margin-left: 100px;
+    animation: slide 30s linear infinite;
+  }
+  @keyframes slide {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-4100px, 0, 0);
+    }
+  }
+  footer{
+    height: 400px;
+    width:95vw;
+    margin:auto;
+    background: linear-gradient(-45deg,#1a49a1d5 10%, rgba(11, 180, 110, 0)90% );
+    display:flex;
 }
+.fr1{
+    height: 250px;
+    width: 300px;
+    background: none;
+    border: 1px;
+    margin-left: 80px;
+    margin-top: 20px;
 }
+.fr2{
+    height: 250px;
+    width: 300px;
+    background: none;
+    border: 1px;
+    margin-left: 20px;
+}
+.fr3{
+    height: 250px;
+    width: 300px;
+    background: none;
+    border: 1px ;
+    margin-left: 20px;
+}
+.fr4{
+    height: 250px;
+    width: 300px;
+    background: none;
+    border: 1px ;
+    margin-left: 20px;
+}
+.fr1logo{
+    border: 1px ;
+    height: 40px;
+    width: 60px;
+    margin-left: 30px;
+    background: url(logo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10px;
+}
+.close{
+    border: 1px;
+    display: flex;
+    background: none;
+}
+.fr1phoenix{
+    color:#50b8dc;
+    font-size: 40px;
+    font-weight: bolder;
+    padding-left:5px;
+    background:none;
+    padding-top: 16px;
+    box-sizing: border-box;
+}
+.fr1haven{
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    background:none;
+    padding-left:30px;
+
+}
+.socials{
+    height: 80px;
+    width:100%;
+    display: flex;
+    margin-top:40px;
+    background: none;
+    justify-content: space-between;
+
+}
+.twitter{
+    height:40px;
+    width: 40px;
+    border: 1px;
+    background: url(IMAGES/linkedin.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.telegram{
+    height:40px;
+    width: 40px;
+    border: 1px;
+    background: url(IMAGES/telegram.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.discord{
+    height:40px;
+    width: 40px;
+    border: 1px;
+    background: url(IMAGES/gmail.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mediumq{
+    height:40px;
+    width: 40px;
+    border: 1px ;
+    background: url(IMAGES/fb-image.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.medium{
+    height:40px;
+    width: 40px;
+    border: 1px ;
+    background: url(IMAGES/twitter.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fr2 ul{
+    background:none;
+    list-style-type: none;
+    align-content: space-between;
+    margin-top: 70px;
+}
+.fr2 ul li{
+    text-align: center;
+    background: none;
+    font-size: 22px;
+    color:white;
+    margin-bottom: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.fr2 ul li a{
+    text-align: center;
+    background: none;
+    font-size: 17px;
+    color:white;
+    margin-top: 4px;
+    text-decoration: none;
+    font-weight: lighter;
+    letter-spacing: 2px;
+
+}
+.fr3 ul{
+    background:none;
+    list-style-type: none;
+    align-content: space-between;
+    margin-top: 70px;
+}
+.fr3 ul li{
+    text-align: center;
+    background: none;
+    font-size: 22px;
+    color:white;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+.fr3 ul li a{
+    text-align: center;
+    background: none;
+    font-size: 17px;
+    color:white;
+    margin-top: 4px;
+    text-decoration: none;
+    font-weight: lighter;
+    letter-spacing: 2px;
+
+}
+.fr4 ul{
+    background:none;
+    list-style-type: none;
+    align-content: space-between;
+    margin-top: 70px;
+}
+.fr4 ul li{
+    text-align: center;
+    background: none;
+    font-size: 22px;
+    color:white;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+.fr4 ul li a{
+    text-align: center;
+    background: none;
+    font-size: 17px;
+    color:white;
+    margin-top: 4px;
+    text-decoration: none;
+    font-weight: lighter;
+    letter-spacing: 2px;
+
+}
+.fr4 ul li a:hover{
+    color:aqua;
+}
+.fr3 ul li a:hover{
+    color:aqua;
+}
+.fr2 ul li a:hover{
+    color:aqua;
+}
+.fr1 ul li a:hover{
+    color:aqua;
+}
+.scrolltop{
+    width:100%;
+    background:linear-gradient(-45deg, #193431,#364742,#85663D,#16034E, #03000A);
+    height: 52px;
+    display: flex;
+}
+.useless{
+    height: 40px;
+    width: 40px;
+    position:fixed
+}
+.top-button{
+    height:50px;
+    width: 50px;
+    background:white;
+    border:1px;
+    border-radius: 50px;
+    margin-left: 1290px;
+    position:sticky;
+    z-index: 1;
+    top:0;
+    
+}
+.top-button a{
+    background: none;
+}
+.top-button a img{
+    background: transparent;
+}
+.fr1 span{
+    color: #FFFFFF;
+}
+.fr1 input{
+    height: 30px;
+    width: 250px;
+    border-radius: 50px;
+    background: #16034E;
+    color:#FFFFFF;
+    border:1px;
+    position: absolute;
+    box-sizing: border-box;
+    padding-left: 7px;
+
+}
+.fr1 input:focus{
+    outline:none;
+}
+.fr1 input::placeholder{
+    padding-left: 5px;
+}
+.socials a{
+    background:none;
+    height: 40px;
+    width:40px;
+}
+.fr1 #search{
+    height: 30px;
+    width: 80px;
+    border-radius: 50px;
+    color: #081155;
+    background:#FFFFFF;
+    border:1px;
+    margin-top: 5px;
+    padding: 5px;
+    position: relative;
+    margin-left: 170px;
+    margin-top: -1px;
+
+}
+  }
+
+  
+  
+  
+
+
 
 
 
@@ -504,14 +1288,29 @@ footer{
 
 
 @media screen and (max-width: 600px) {
+   *{
+    overflow: overlay;
     
+   } 
+   ::-webkit-scrollbar {
+    width: 1px;
+    height: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(90, 90, 90, 0);
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+  }
 body{
     background:linear-gradient(#04182ffd 100%,transparent 0%),url(IMAGES/bg-image1.jpg);
     padding: 0 0 0 0;
     margin: 0 0 0 0;
     font-family: Poppins;
     color:white;
-    overflow-x: hidden;
+    overflow: visible;
 }
 html{
     scroll-behavior: smooth;
@@ -777,9 +1576,9 @@ section{
     justify-content: center;
     align-items: center;
     background: none;
-    width: 97%;
+    width: 100%;
     border:1px;
-    overflow-x: hidden;
+    overflow:overlay;
 }
 section:nth-child(1){
     color: transparent;
@@ -796,14 +1595,21 @@ section:nth-child(1){
 section .containing{
     background:transparent;
     background-size: cover;
-    width: 90%;
+    width: 100%;
     border: 1px;
     margin: auto;
 }
-section h1{
-    font-size: 25px;
+.h2{
+    font-size: 27px;
     text-align: center;
+    width:90%;
+    padding:5px 0 0 0;
     background-color: transparent;
+    border: 1px solid green;
+}
+.h1{
+  text-align: center;
+  width:60%;
 }
 section h2{
     font-size: 30px;
@@ -825,7 +1631,7 @@ section .text-container .text-box h3{
 }
 section .text-container{
     flex-direction: column;
-    width:80%;
+    width:100%;
 }
 .reveal{
     position: relative;
@@ -963,14 +1769,821 @@ button:hover .inside{
 button:hover .wrap{
     color:rgb(10, 10, 20);
 }
-footer{
-    height: 10vh;
-    width:100vw;
-    background: linear-gradient(-45deg,#081155 10%, rgb(11, 180, 110)90% );
+.white{
+    font-size: 32px; 
+    text-align:center;
+    white-space: nowrap;
 }
-
-
-}
+    .card,.card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10,.card11{
+      width: 130px;
+      height: 270px;
+      background: #f0f0f0;
+      border-radius: 10px;
+      text-align: center;
+      transition: all 0.5s;
+    }
+    .card .img {
+      display: flex;
+      margin: 30px auto 10px auto;
+      width: 70px;
+      height: 70px;
+      background:url(IMAGES/profile9.png);
+      background-size: cover;
+      border-radius: 50%;
+      font-size: 11px;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s;
+     }
+     
+     .card:hover .img {
+      width: 100%;
+      height: 60%;
+      border-radius: 10px 0 0;
+      margin: 0 auto;
+      background:url(IMAGES/profile9.png);
+      background-size: cover;
+      background-position: center;
+      z-index: 99999;
+     }
+     .card1 .img {
+      display: flex;
+      margin: 30px auto 10px auto;
+      width: 70px;
+      height: 70px;
+      background:url(IMAGES/nft-image.jpg);
+      background-size: cover;
+      border-radius: 50%;
+      font-size: 11px;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s;
+     }
+     
+     .card1:hover .img {
+      width: 100%;
+      height: 60%;
+      border-radius: 10px 0 0;
+      margin: 0 auto;
+      background:url(IMAGES/nft-image.jpg);
+      background-size: cover;
+      background-position: center;
+      z-index: 99999;
+     }
+     .card2 .img {
+      display: flex;
+      margin: 30px auto 10px auto;
+      width: 70px;
+      height: 70px;
+      background:url(IMAGES/profile8.png);
+      background-size: cover;
+      border-radius: 50%;
+      font-size: 11px;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s;
+     }
+     
+     .card2:hover .img {
+      width: 100%;
+      height: 60%;
+      border-radius: 10px 0 0;
+      margin: 0 auto;
+      background:url(IMAGES/profile8.png);
+      background-size: cover;
+      background-position: center;
+      z-index: 99999;
+     }
+     .card3 .img {
+      display: flex;
+      margin: 30px auto 10px auto;
+      width: 70px;
+      height: 70px;
+      background:url(IMAGES/profile7.jpg);
+      background-size: cover;
+      border-radius: 50%;
+      font-size: 11px;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s;
+     }
+     
+     .card3:hover .img {
+      width: 100%;
+      height: 60%;
+      border-radius: 10px 0 0;
+      margin: 0 auto;
+      background:url(IMAGES/profile7.jpg);
+      background-size: cover;
+      background-position: center;
+      z-index: 99999;
+     }
+     .card4 .img {
+      display: flex;
+      margin: 30px auto 10px auto;
+      width: 70px;
+      height: 70px;
+      background:url(IMAGES/profile6.jpg);
+      background-size: cover;
+      border-radius: 50%;
+      font-size: 11px;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s;
+     }
+     
+     .card4:hover .img {
+      width: 100%;
+      height: 60%;
+      border-radius: 10px 0 0;
+      margin: 0 auto;
+      background:url(IMAGES/profile6.jpg);
+      background-position: center;
+      background-size: cover;
+      z-index: 99999;
+     }
+     .card5 .img {
+      display: flex;
+      margin: 30px auto 10px auto;
+      width: 70px;
+      height: 70px;
+      background:url(IMAGES/profile5.jpg);
+      background-size: cover;
+      border-radius: 50%;
+      font-size: 11px;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s;
+     }
+     
+     .card5:hover .img {
+      width: 100%;
+      height: 60%;
+      border-radius: 10px 0 0;
+      margin: 0 auto;
+      background:url(IMAGES/profile5.jpg);
+      background-size: cover;
+      background-position: center;
+      z-index: 99999;
+     }
+     .card6 .img {
+      display: flex;
+      margin: 30px auto 10px auto;
+      width: 70px;
+      height: 70px;
+      background:url(IMAGES/profile4.jpg);
+      background-size: cover;
+      border-radius: 50%;
+      font-size: 11px;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s;
+     }
+     
+     .card6:hover .img {
+      width: 100%;
+      height: 60%;
+      border-radius: 10px 0 0;
+      margin: 0 auto;
+      background:url(IMAGES/profile4.jpg);
+      background-size: cover;
+      background-position: center;
+      z-index: 99999;
+     }
+     .card7 .img {
+      display: flex;
+      margin: 30px auto 10px auto;
+      width: 70px;
+      height: 70px;
+      background:url(IMAGES/profile3.jpg);
+      background-size: cover;
+      border-radius: 50%;
+      font-size: 11px;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s;
+     }
+     
+     .card7:hover .img {
+      width: 100%;
+      height: 60%;
+      border-radius: 10px 0 0;
+      margin: 0 auto;
+      background:url(IMAGES/profile3.jpg);
+      background-size: cover;
+      background-position: center;
+      z-index: 99999;
+     }
+     .card8 .img {
+      display: flex;
+      margin: 30px auto 10px auto;
+      width: 70px;
+      height: 70px;
+      background:url(IMAGES/profile2.jpg);
+      background-size: cover;
+      border-radius: 50%;
+      font-size: 11px;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s;
+     }
+     
+     .card8:hover .img {
+      width: 100%;
+      height: 60%;
+      border-radius: 10px 0 0;
+      margin: 0 auto;
+      background:url(IMAGES/profile2.jpg);
+      background-size: cover;
+      background-position: center;
+      z-index: 99999;
+     }
+     .card9 .img {
+      display: flex;
+      margin: 30px auto 10px auto;
+      width: 70px;
+      height: 70px;
+      background:url(IMAGES/profile11.jpg);
+      background-size: cover;
+      border-radius: 50%;
+      font-size: 11px;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s;
+     }
+     
+     .card9:hover .img {
+      width: 100%;
+      height: 60%;
+      border-radius: 10px 0 0;
+      margin: 0 auto;
+      background:url(IMAGES/profile11.jpg);
+      background-size: cover;
+      background-position: center;
+      z-index: 99999;
+     }
+     .card10 .img {
+      display: flex;
+      margin: 30px auto 10px auto;
+      width: 70px;
+      height: 70px;
+      background:url(IMAGES/profile10.png);
+      background-size: cover;
+      border-radius: 50%;
+      font-size: 11px;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s;
+     }
+     
+     .card10:hover .img {
+      width: 100%;
+      height: 60%;
+      border-radius: 10px 0 0;
+      margin: 0 auto;
+      background:url(IMAGES/profile10.png);
+      background-size: cover;
+      background-position: center;
+      z-index: 99999;
+     }
+     .card11 .img {
+      display: flex;
+      margin: 30px auto 10px auto;
+      width: 70px;
+      height: 70px;
+      background:url(IMAGES/profile1.jpg);
+      background-size: cover;
+      border-radius: 50%;
+      font-size: 11px;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s;
+     }
+     
+     .card11:hover .img {
+      width: 100%;
+      height: 60%;
+      border-radius: 10px 0 0;
+      margin: 0 auto;
+      background:url(IMAGES/profile1.jpg);
+      background-size: cover;
+      background-position: center;
+      z-index: 99999;
+     }
+     .containment {
+      overflow: hidden;
+      display: flex;
+      height: 50vh;
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 100px;
+      border: 1px;
+    }
+    /*
+    .container:hover .card1,.container:hover .card2,.container:hover .card3,.container:hover .card4,.container:hover .card5,.container:hover .card6,.container:hover .card7,.container:hover .card8,.container:hover .card9,.container:hover .card10,.container:hover .card11{
+      animation-play-state: paused;
+    }*/
+    .card:hover p img,.card1:hover p img,.card2:hover p img,.card3:hover p img,.card4:hover p img,.card5:hover p img,.card6:hover p img,.card7:hover p img,.card8:hover p img,.card9:hover p img,.card10:hover p img,.card11:hover p img{
+      height:60%;
+      width:10%;
+      padding: 5px;
+    }
+    
+    .card,.card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10,.card11{
+      height: 100%;
+      min-width: 300px;
+      margin-left: 100px;
+      animation: slide 40s linear infinite;
+    }
+    @keyframes slide {
+      0% {
+        transform: translate3d(0, 0, 0);
+      }
+      100% {
+        transform: translate3d(-5500px, 0, 0);
+      }
+    }
+    .card:hover,.card1:hover,.card2:hover,.card3:hover,.card4:hover,.card5:hover,.card6:hover,.card7:hover,.card8:hover,.card9:hover,.card10:hover,.card11:hover{
+      box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.623);
+      background-color: #4bb8ff;
+     }
+     
+    .blob {
+      height: 10px;
+      width: 75%;
+      border-radius: 0 0 30px 30px;
+      margin: 0 auto;
+      background-color: #4bb8ff;
+      visibility: visible;
+      transition: all 0.3s;
+     }
+     
+     .card:hover .blob,.card1:hover .blob,.card2:hover .blob,.card3:hover .blob,.card4:hover .blob,.card5:hover .blob,.card6:hover .blob,.card7:hover .blob,.card8:hover .blob,.card9:hover .blob,.card10:hover .blob,.card11:hover .blob{
+      height: 0;
+     }
+     .card h2,.card1 h2,.card2 h2,.card3 h2,.card4 h2,.card5 h2,.card6 h2,.card7 h2,.card8 h2,.card9 h2,.card10 h2,.card11 h2 {
+      padding: 15px 10px;
+      font-size: 25px;
+      transition: all 0.1s;
+      z-index: -99;
+      line-height: 17px;
+     }
+     
+     .card span,.card1 span,.card2 span,.card3 span,.card4 span,.card5 span,.card6 span,.card7 span,.card8 span,.card9 span,.card10 span,.card11 span{
+      font-size: 18px;
+     }
+     
+     .card:hover h2,.card1:hover h2,.card2:hover h2,.card3:hover h2,.card4:hover h2,.card5:hover h2,.card6:hover h2,.card7:hover h2,.card8:hover h2,.card9:hover h2,.card10:hover h2,.card11:hover h2 {
+      opacity: 0;
+      width: 100%;
+      position: absolute;
+      transition: all 0.5s;
+     }
+     
+     .card>p,.card1>p,.card2>p,.card3>p,.card4>p,.card5>p,.card6>p,.card7>p,.card8>p,.card9>p,.card10>p,.card11>p {
+      opacity: 0;
+     } 
+     .card:hover>p,.card1:hover>p,.card2:hover>p,.card3:hover>p,.card4:hover>p,.card5:hover>p,.card6:hover>p,.card7:hover>p,.card8:hover>p,.card9:hover>p,.card10:hover>p,.card11:hover>p{
+      opacity: 1;
+     }
+     .cont{
+        display:grid;
+        grid-template-columns: 1fr;
+        width:80%;
+        margin: auto;
+        gap:20px;
+      }
+      .containor{
+        height:1px;
+        width:400px;
+        border-left:3px solid rgb(104, 114, 104);
+        animation: growing 5s linear 1;
+        animation-fill-mode: forwards;
+        margin-top: 20px;
+      }
+      @keyframes growing{
+        0%{
+          height:1px;
+        }
+        100%{
+          height: 400px;
+        }
+      }
+      .geeks{
+        height:auto;
+        width:1px;
+        margin-top:50px;
+        border-bottom:2px solid rgb(104, 114, 104);
+        animation: grow 7s linear 1;
+        animation-fill-mode: forwards;
+        font-size: 20px;
+        font-family: Poppins;
+        white-space: nowrap;
+        padding:5px;
+      }
+      @keyframes grow{
+        0%{
+          width:1px;
+        }
+        100%{
+          width: 400px;
+        }
+      }
+      .geeks1{
+        height:auto;
+        width:1px;
+        border-bottom:2px solid rgb(104, 114, 104);
+        animation: grow 8s linear 1;
+        margin-top:40px;
+        animation-fill-mode: forwards;
+        font-size: 20px;
+        white-space: nowrap;
+        padding:5px;
+      }
+      @keyframes grow{
+        0%{
+          width:1px;
+        }
+        100%{
+          width: 400px;
+        }
+      }
+      .geeks2{
+        height:auto;
+        width:1px;
+        background:none;
+        border-bottom:2px solid rgb(104, 114, 104);
+        animation: grow 9s linear 1;
+        animation-fill-mode: forwards;
+        font-size: 20px;
+        white-space: nowrap;
+        margin-top:40px;
+        margin-bottom: 50px;
+        padding:5px;
+      }
+      @keyframes grow{
+        0%{
+          width:1px;
+        }
+        100%{
+          width: 400px;
+        }
+      }
+      .geeks3{
+        height:auto;
+        width:1px;
+        background:none;
+        border-bottom:2px solid rgb(104, 114, 104);
+        animation: grow 10s linear 1;
+        animation-fill-mode: forwards;
+        font-size: 20px;
+        margin-top:40px;
+        white-space: nowrap;
+        margin-bottom: 50px;
+        padding:5px;
+      }
+      @keyframes grow{
+        0%{
+          width:1px;
+        }
+        100%{
+          width: 400px;
+        }
+      }
+      .span1{
+        opacity:0;
+        font-size: 20px;
+        animation: appear 15s linear 1;
+        animation-fill-mode: forwards;
+        background:none;
+        padding-top: 1px;
+      }
+      @keyframes appear {
+        0%{
+          opacity:0;
+          background:none;
+          padding-top: 1px;
+        }
+        20%{
+          opacity:0.2;
+          background:none;
+          padding-top: 1px;
+        }
+        50%{
+          opacity:0.5;
+          background:none;
+          padding-top: 1px;
+        }
+        70%{
+          opacity:0.7;
+          background:none;
+          padding-top: 1px;
+        }
+        100%{
+          opacity:1;
+          background:none;
+          padding-top: 1px;
+        }
+      }
+      .styling{
+        position:relative; 
+        padding-top: 0; 
+        margin-left: -30px; 
+        font-size: 25px;
+        background-color:none;
+        z-index: 20;
+        padding-left: 25px;
+      }
+      footer{
+        height: auto;
+        width:100vw;
+        display:grid;
+        grid-template-columns: 1fr;
+        gap:20px;
+    }
+    .fr1{
+        height: auto;
+        background: none;
+        border: 1px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .fr2{
+        height: auto;
+        background: none;
+        border: 1px;
+       margin:auto;
+    }
+    .fr3{
+        height: auto;
+        background: none;
+        border: 1px ;
+        margin:auto;
+    }
+    .fr4{
+        height: auto;
+        background: none;
+        border: 1px ;
+        margin:0;
+        width: 95vw;
+        padding:0;
+        border: 1px;
+        }
+    .fr1logo{
+        border: 1px ;
+        height: 40px;
+        width: 60px;
+        margin-left: 30px;
+        background: url(logo.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 10px;
+    }
+    .close{
+        border: 1px;
+        display: flex;
+        background: none;
+    }
+    .fr1phoenix{
+        color:#50b8dc;
+        font-size: 40px;
+        font-weight: bolder;
+        padding-left:5px;
+        background:none;
+        padding-top: 16px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .fr1haven{
+        color:white;
+        font-size: 20px;
+        text-align: center;
+        background:none;
+        padding-left:30px;
+    
+    }
+    .socials{
+        height: 80px;
+        width:100%;
+        display: flex;
+        margin-top:40px;
+        background: none;
+        justify-content: space-between;
+    
+    }
+    .twitter{
+        height:40px;
+        width: 40px;
+        border: 1px;
+        background: url(IMAGES/linkedin.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 70% 70%;
+    }
+    .telegram{
+        height:40px;
+        width: 40px;
+        border: 1px;
+        background: url(IMAGES/telegram.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 70% 70%;
+    }
+    .discord{
+        height:40px;
+        width: 40px;
+        border: 1px;
+        background: url(IMAGES/gmail.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 70% 70%;
+    }
+    .mediumq{
+        height:40px;
+        width: 40px;
+        border: 1px ;
+        background: url(IMAGES/fb-image.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 70% 70%;
+    }
+    .medium{
+        height:40px;
+        width: 40px;
+        border: 1px ;
+        background: url(IMAGES/twitter.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 70% 70%;
+    }
+    .fr2 ul{
+        background:none;
+        list-style-type: none;
+        align-content: space-between;
+        margin-top: 30px;
+        margin:0 0 0 0;
+        padding: 0 0 0 0;
+    }
+    .fr2 ul li{
+        text-align: center;
+        background: none;
+        font-size: 22px;
+        color:white;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    .fr2 ul li a{
+        text-align: center;
+        background: none;
+        font-size: 17px;
+        color:white;
+        margin-top: 4px;
+        text-decoration: none;
+        font-weight: lighter;
+        letter-spacing: 2px;
+    
+    }
+    .fr3 ul{
+        background:none;
+        list-style-type: none;
+        align-content: space-between;
+        margin-top: 20px;
+        margin:0 0 0 0;
+        padding: 0 0 0 0;
+    }
+    .fr3 ul li{
+        text-align: center;
+        background: none;
+        font-size: 22px;
+        color:white;
+        font-weight: bold;
+    }
+    .fr3 ul li a{
+        text-align: center;
+        background: none;
+        font-size: 17px;
+        color:white;
+        margin-top: 4px;
+        text-decoration: none;
+        font-weight: lighter;
+        letter-spacing: 2px;
+    
+    }
+    .fr4 ul{
+        background:none;
+        list-style-type: none;
+        width: 100%;
+        border:1px;
+        margin:0 0 0 0;
+        padding: 0 0 0 0;
+    }
+    .fr4 ul li{
+        text-align: center;
+        background: none;
+        font-size: 22px;
+        color:white;
+        width: auto;
+        margin-bottom: 5px;
+        font-weight: bold;
+        border:1px;
+        width: 100%;
+    }
+    .fr4 ul li a{
+        text-align: center;
+        background: none;
+        font-size: 17px;
+        color:white;
+        margin-top: 4px;
+        text-decoration: none;
+        font-weight: lighter;
+        letter-spacing: 2px;
+        width:100% ;
+        border:1px;
+    
+    }
+    .fr4 ul li a:hover{
+        color:aqua;
+    }
+    .fr3 ul li a:hover{
+        color:aqua;
+    }
+    .fr2 ul li a:hover{
+        color:aqua;
+    }
+    .fr1 ul li a:hover{
+        color:aqua;
+    }
+    .scrolltop{
+        width:100%;
+        background:linear-gradient(-45deg, #193431,#364742,#85663D,#16034E, #03000A);
+        height: 52px;
+        display: flex;
+    }
+    .useless{
+        height: 40px;
+        width: 40px;
+        position:fixed
+    }
+    .top-button{
+        height:50px;
+        width: 50px;
+        background:white;
+        border:1px;
+        border-radius: 50px;
+        margin-left: 1290px;
+        position:sticky;
+        z-index: 1;
+        top:0;
+        
+    }
+    .top-button a{
+        background: none;
+    }
+    .top-button a img{
+        background: transparent;
+    }
+    .fr1 span{
+        color: #FFFFFF;
+    }
+    .fr1 input{
+        height: 30px;
+        width: 73%;
+        border-radius: 50px;
+        background: #16034E;
+        color:#FFFFFF;
+        border:1px;
+        position: absolute;
+        box-sizing: border-box;
+    
+    }
+    .fr1 input:focus{
+        outline:none;
+    }
+    .fr1 input::placeholder{
+        padding-left: 5px;
+    }
+    .socials a{
+        background:none;
+        height: 40px;
+        width:40px;
+    }
+    .fr1 #search{
+      text-align: center;
+        height: 30px;
+        width: 70px;
+        border-radius: 50px;
+        color: #081155;
+        background:#FFFFFF;
+        border:1px;
+        margin-top: 5px;
+        padding: 5px;
+        position: relative;
+        float:right;
+        margin-top: -1px;
+    
+    }
+      }
 @media screen and (max-height: 450px) {
     .overlay a {font-size: 20px}
     .overlay .closebtn {
