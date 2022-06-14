@@ -1667,7 +1667,7 @@ section h2{
     text-align: center;
     text-transform: uppercase;
     color:#50b8dc;
-    width:100vw;
+    width:100%;
     padding-left: 10px;
     white-space: nowrap;
 }
@@ -1827,7 +1827,7 @@ button:hover .wrap{
 }
 .card,.card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10,.card11{
       width: 130px;
-      height: 250px;
+      height: 100%;
       background: #3268af;
       border-radius: 10px;
       text-align: center;
@@ -2404,7 +2404,7 @@ button:hover .wrap{
       }
       footer{
         height: auto;
-        width:100vw;
+        width:100%;
         display:grid;
         grid-template-columns: 1fr;
         gap:20px;
