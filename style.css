@@ -594,7 +594,7 @@ button:hover .wrap{
 .card,.card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10,.card11{
     width: 190px;
     height: 254px;
-    background: #f0f0f0;
+    background: #9386dd;
     border-radius: 10px;
     text-align: center;
     transition: all 0.5s;
@@ -901,6 +901,7 @@ button:hover .wrap{
     transition: all 0.1s;
     z-index: -99;
     line-height: 17px;
+    color:black;
    }
    
    .card span,.card1 span,.card2 span,.card3 span,.card4 span,.card5 span,.card6 span,.card7 span,.card8 span,.card9 span,.card10 span,.card11 span{
@@ -912,6 +913,7 @@ button:hover .wrap{
     width: 100%;
     position: absolute;
     transition: all 0.5s;
+    color:black;
    }
    
    .card>p,.card1>p,.card2>p,.card3>p,.card4>p,.card5>p,.card6>p,.card7>p,.card8>p,.card9>p,.card10>p,.card11>p {
@@ -931,10 +933,9 @@ button:hover .wrap{
   .socials1{
     display:none;
   }
-  /*
-  .containement:hover .card1,.container:hover .card2,.container:hover .card3,.container:hover .card4,.container:hover .card5,.container:hover .card6,.container:hover .card7,.container:hover .card8,.container:hover .card9,.container:hover .card10,.container:hover .card11{
+  .containment:hover .card,.containment:hover .card1,.containment:hover .card2,.containment:hover .card3,.containment:hover .card4,.containment:hover .card5,.containment:hover .card6,.containment:hover .card7,.containment:hover .card8,.containment:hover .card9,.containment:hover .card10,.containment:hover .card11{
     animation-play-state: paused;
-  }*/
+  }
   .card:hover p img,.card1:hover p img,.card2:hover p img,.card3:hover p img,.card4:hover p img,.card5:hover p img,.card6:hover p img,.card7:hover p img,.card8:hover p img,.card9:hover p img,.card10:hover p img,.card11:hover p img{
     height:60%;
     width:10%;
