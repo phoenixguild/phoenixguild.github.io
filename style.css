@@ -101,6 +101,7 @@ html{
     padding-top: 7px;
     box-sizing: border-box;
     font-size: 30px;
+    outline: none;
     
 
 
@@ -422,22 +423,43 @@ button:hover .wrap{
 }
 .cont{
     display:grid;
-    grid-template-columns: 1fr 1fr;
-    height: 170vh;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    height: auto;
     width:80%;
     margin:auto;
     gap:40px;
+    border:1px;
   }
 
   .containor{
     height:1px;
-    width:400px;
-    border-top-left-radius: 60px;
-    border-left:3px solid rgb(104, 114, 104);
+    width:100%;
+    border:1px;
     animation: growing 5s linear 1;
     animation-fill-mode: forwards;
   }
+  .containor1{
+    height:1px;
+    width:100%;
+    border:1px;
+   animation: growing 5s linear 1;
+    animation-fill-mode: forwards;
+  }
+  .containor2{
+    height:1px;
+    width:100%;
+    border:1px;
+    animation: growing 5s linear 1;
+    animation-fill-mode: forwards;
+  }
+  .containor3{
+    height:1px;
+    width:100%;
+    border:1px;
+    animation: growing 5s linear 1;
+    animation-fill-mode: forwards;
+  }
+  
   @keyframes growing{
     0%{
       height:1px;
@@ -449,7 +471,8 @@ button:hover .wrap{
   .geeks{
     height:auto;
     width:1px;
-    margin-top:50px;
+    margin:auto;
+    margin-top:20px;
     border-bottom:2px solid rgb(104, 114, 104);
     animation: grow 7s linear 1;
     animation-fill-mode: forwards;
@@ -469,13 +492,15 @@ button:hover .wrap{
   .geeks1{
     height:auto;
     width:1px;
+    margin:auto;
     border-bottom:2px solid rgb(104, 114, 104);
     animation: grow 8s linear 1;
-    margin-top:40px;
+    margin-top:20px;
     animation-fill-mode: forwards;
     font-size: 25px;
     white-space: nowrap;
     padding:5px;
+    margin-bottom:20px;
   }
   @keyframes grow{
     0%{
@@ -489,13 +514,14 @@ button:hover .wrap{
     height:auto;
     width:1px;
     background:none;
+    margin:auto;
     border-bottom:2px solid rgb(104, 114, 104);
     animation: grow 9s linear 1;
     animation-fill-mode: forwards;
     font-size: 25px;
     white-space: nowrap;
-    margin-top:40px;
-    margin-bottom: 50px;
+    margin-top:20px;
+    margin-bottom: 20px;
     padding:5px;
   }
   @keyframes grow{
@@ -510,14 +536,16 @@ button:hover .wrap{
     height:auto;
     width:1px;
     background:none;
+    margin:auto;
     border-bottom:2px solid rgb(104, 114, 104);
     animation: grow 10s linear 1;
     animation-fill-mode: forwards;
     font-size: 25px;
-    margin-top:40px;
+    margin-top:20px;
     white-space: nowrap;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     padding:5px;
+    
   }
   @keyframes grow{
     0%{
@@ -534,10 +562,12 @@ button:hover .wrap{
   }
   .styling{
     position:relative; 
+    margin:auto;
+    width:auto;
     padding-top: 50px; 
-    margin-left: -30px; 
+    margin-left: -50px; 
     font-size: 40px;
-    background-color:#04182f;
+    display:block;
   }
   @keyframes appear {
     0%{
@@ -898,6 +928,9 @@ button:hover .wrap{
     margin: 0 auto;
     margin-top: 100px;
   }
+  .socials1{
+    display:none;
+  }
   /*
   .containement:hover .card1,.container:hover .card2,.container:hover .card3,.container:hover .card4,.container:hover .card5,.container:hover .card6,.container:hover .card7,.container:hover .card8,.container:hover .card9,.container:hover .card10,.container:hover .card11{
     animation-play-state: paused;
@@ -1162,10 +1195,10 @@ button:hover .wrap{
 .top-button a img{
     background: transparent;
 }
-.fr1 span{
+.bottom span{
     color: #FFFFFF;
 }
-.fr1 input{
+.bottom input{
     height: 30px;
     width: 250px;
     border-radius: 50px;
@@ -1177,10 +1210,10 @@ button:hover .wrap{
     padding-left: 7px;
 
 }
-.fr1 input:focus{
+.bottom input:focus{
     outline:none;
 }
-.fr1 input::placeholder{
+.bottom input::placeholder{
     padding-left: 5px;
 }
 .socials a{
@@ -1188,7 +1221,7 @@ button:hover .wrap{
     height: 40px;
     width:40px;
 }
-.fr1 #search{
+.bottom #search{
     height: 30px;
     width: 80px;
     border-radius: 50px;
@@ -1201,6 +1234,9 @@ button:hover .wrap{
     margin-left: 170px;
     margin-top: -1px;
 
+}
+.bbottom{
+  display:none;
 }
   }
 
@@ -1296,6 +1332,7 @@ button:hover .wrap{
 @media screen and (max-width: 600px) {
    *{
     overflow: overlay;
+    font-family: Poppins;
     
    } 
    ::-webkit-scrollbar {
@@ -1316,10 +1353,16 @@ body{
     margin: 0 0 0 0;
     font-family: Poppins;
     color:white;
-    overflow: visible;
+    overflow: hidden;
 }
 html{
     scroll-behavior: smooth;
+}
+.bottom{
+  display:none;
+}
+.bbottom{
+  display:block;
 }
 .cover{
     height:100vh;
@@ -1384,7 +1427,7 @@ html{
     border:1px;
 }
 .heading{
-    width: 96vw;
+    width: 100%;
     height: 7vh;
     border: 1px solid white;
     position:fixed;
@@ -1781,9 +1824,9 @@ button:hover .wrap{
     text-align:center;
     white-space: nowrap;
 }
-    .card,.card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10,.card11{
+.card,.card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9,.card10,.card11{
       width: 130px;
-      height: 270px;
+      height: 250px;
       background: #3268af;
       border-radius: 10px;
       text-align: center;
@@ -2086,10 +2129,9 @@ button:hover .wrap{
       margin-top: 100px;
       border: 1px;
     }
-    /*
-    .container:hover .card1,.container:hover .card2,.container:hover .card3,.container:hover .card4,.container:hover .card5,.container:hover .card6,.container:hover .card7,.container:hover .card8,.container:hover .card9,.container:hover .card10,.container:hover .card11{
+     .container:hover .card,.container:hover .card1,.container:hover .card2,.container:hover .card3,.container:hover .card4,.container:hover .card5,.container:hover .card6,.container:hover .card7,.container:hover .card8,.container:hover .card9,.container:hover .card10,.container:hover .card11{
       animation-play-state: paused;
-    }*/
+    }
     .card:hover p img,.card1:hover p img,.card2:hover p img,.card3:hover p img,.card4:hover p img,.card5:hover p img,.card6:hover p img,.card7:hover p img,.card8:hover p img,.card9:hover p img,.card10:hover p img,.card11:hover p img{
       height:60%;
       width:10%;
@@ -2159,22 +2201,75 @@ button:hover .wrap{
         width:80%;
         margin: auto;
         gap:20px;
+        border:1px;
+        overflow: hidden;
       }
       .containor{
         height:1px;
-        width:400px;
+        width:250px;
         border-left:3px solid rgb(104, 114, 104);
         animation: growing 5s linear 1;
         animation-fill-mode: forwards;
         margin-top: 20px;
-        overflow-x: hidden;
+        overflow:visible;
       }
       @keyframes growing{
         0%{
           height:1px;
         }
         100%{
-          height: 400px;
+          height: 250px;
+        }
+      }
+      .containor1{
+        height:1px;
+        width:250px;
+        border:1px;
+        border-left:3px solid rgb(104, 114, 104);
+        animation: growing1 5s linear 1;
+        animation-fill-mode: forwards;
+        margin-top: 20px;
+        overflow: visible;
+      }
+      @keyframes growing1{
+        0%{
+          height:1px;
+        }
+        100%{
+          height: 245px;
+        }
+      }
+      .containor2{
+        height:1px;
+        width:250px;
+        border-left:3px solid rgb(104, 114, 104);
+        animation: growing2 5s linear 1;
+        animation-fill-mode: forwards;
+        margin-top: 20px;
+      }
+      @keyframes growing2{
+        0%{
+          height:1px;
+        }
+        100%{
+          height: 200px;
+        }
+      }
+      .containor3{
+        height:1px;
+        width:290px;
+        border-left:3px solid rgb(104, 114, 104);
+        animation: growing3 5s linear 1;
+        animation-fill-mode: forwards;
+        margin-top: 20px;
+        overflow-x: visible;
+      }
+      @keyframes growing3{
+        0%{
+          height:1px;
+        }
+        100%{
+          height: 200px;
         }
       }
       .geeks{
@@ -2188,14 +2283,13 @@ button:hover .wrap{
         font-family: Poppins;
         white-space: nowrap;
         padding:5px;
-        overflow-x:hidden;
       }
       @keyframes grow{
         0%{
           width:1px;
         }
         100%{
-          width: 400px;
+          width: 290px;
         }
       }
       .geeks1{
@@ -2215,7 +2309,7 @@ button:hover .wrap{
           width:1px;
         }
         100%{
-          width: 400px;
+          width: 290px;
         }
       }
       .geeks2{
@@ -2227,8 +2321,8 @@ button:hover .wrap{
         animation-fill-mode: forwards;
         font-size: 20px;
         white-space: nowrap;
-        margin-top:40px;
-        margin-bottom: 50px;
+        margin-top:20px;
+        margin-bottom: 20px;
         padding:5px;
         overflow-x:hidden;
       }
@@ -2237,7 +2331,7 @@ button:hover .wrap{
           width:1px;
         }
         100%{
-          width: 400px;
+          width: 290px;
         }
       }
       .geeks3{
@@ -2248,9 +2342,9 @@ button:hover .wrap{
         animation: grow 10s linear 1;
         animation-fill-mode: forwards;
         font-size: 20px;
-        margin-top:40px;
+        margin-top:20px;
         white-space: nowrap;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
         padding:5px;
         overflow-x:hidden;
       }
@@ -2259,7 +2353,7 @@ button:hover .wrap{
           width:1px;
         }
         100%{
-          width: 400px;
+          width: 220px;
         }
       }
       .span1{
@@ -2300,11 +2394,12 @@ button:hover .wrap{
       .styling{
         position:relative; 
         padding-top: 0; 
-        margin-left: -30px; 
-        font-size: 25px;
+        margin-left: -10px; 
+        font-size: 35px;
         background-color:none;
         z-index: 20;
         padding-left: 25px;
+        display:block;
       }
       footer{
         height: auto;
@@ -2376,11 +2471,15 @@ button:hover .wrap{
     
     }
     .socials{
+      display:none;
+    }
+    .socials1{
         height: 80px;
-        width:100%;
+        width:80%;
         display: flex;
         margin-top:40px;
         background: none;
+        margin: auto;
         justify-content: space-between;
     
     }
@@ -2555,10 +2654,10 @@ button:hover .wrap{
     .top-button a img{
         background: transparent;
     }
-    .fr1 span{
+    .bbottom span{
         color: #FFFFFF;
     }
-    .fr1 input{
+    .bbottom input{
         height: 30px;
         width: 73%;
         border-radius: 50px;
@@ -2569,10 +2668,10 @@ button:hover .wrap{
         box-sizing: border-box;
     
     }
-    .fr1 input:focus{
+    .bbottom input:focus{
         outline:none;
     }
-    .fr1 input::placeholder{
+    .bbottom input::placeholder{
         padding-left: 5px;
     }
     .socials a{
@@ -2580,7 +2679,7 @@ button:hover .wrap{
         height: 40px;
         width:40px;
     }
-    .fr1 #search{
+    .bbottom #search{
       text-align: center;
         height: 30px;
         width: 70px;
@@ -2588,11 +2687,11 @@ button:hover .wrap{
         color: #081155;
         background:#FFFFFF;
         border:1px;
-        margin-top: 5px;
+        margin-top: 1px;
         padding: 5px;
         position: relative;
         float:right;
-        margin-top: -1px;
+        margin-right: 50px;
     
     }
       }
