@@ -2441,27 +2441,30 @@ button:hover .wrap{
         border: 1px ;
         height: 40px;
         width: 60px;
+        font-size:40px;
         margin-left: 30px;
         background: url(logo.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         margin-top: 10px;
+        display:none;
     }
     .close{
         border: 1px;
         display: flex;
         background: none;
+        border:1px;
     }
     .fr1phoenix{
+      font-size: 40px;
         color:#50b8dc;
-        font-size: 40px;
         font-weight: bolder;
         background:none;
-        padding-top: 16px;
-        box-sizing: border-box;
         text-align: center;
-        width: 99%;
+        width: 100%;
+        border:1px;
+        position: relative;
     }
     .fr1haven{
         color:white;
