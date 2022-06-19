@@ -73,7 +73,28 @@ body{
     margin: 0;
     color:white;
     overflow-x: hidden;
+    overflow-y: scroll;
 }
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar
+{
+	width: 15px;
+	background-color: #F5F5F5;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	background-color: #00FFFF;
+  border-radius: 3px;
+	
+	}
 html{
     scroll-behavior: smooth;
 }
@@ -317,6 +338,7 @@ main{
   width:100%;
   height:50px;
   display: flex;
+  padding-top: 30px;
   justify-content: space-between;
   margin-bottom: 50px;
 }
@@ -409,8 +431,9 @@ section{
     margin-left: 25px;
     height:800px;
     position: absolute;
-    z-index: -10000;
-    border: 1px;
+    z-index: 1;
+    border: 1px ;
+    
   }
   .cover1{
     border:2px solid #00DCFF;
@@ -446,13 +469,16 @@ section{
     border:2px solid #00DCFF;
     background:black;
     border-radius: 10px;
-    color:#00FFFF;
+    color:#FFFFFF;
     padding:5px;
     padding-top: 10px;
     box-sizing: border-box;
+    z-index: 9999;
   }
   .cover112:hover{
-    color:red;
+    color:#00FFFF;
+    background: linear-gradient(#2F3353, #004461);
+
   }
   .cover113{
     color:white;
@@ -468,10 +494,9 @@ section{
     box-sizing: border-box;
   }
 .cover113:hover{
-    color:#00FFFF;
-    border:solid #00FFFF;
-    background:white;
-  }
+  color:#00FFFF;
+  background: linear-gradient(#2F3353, #004461);
+}
   .cover2{
     border:2px solid #00DCFF;
     width: 85%;
@@ -501,7 +526,7 @@ section{
     height:50px;
     width:40%;
     margin: auto;
-    color: #00FFFF;
+    color: #FFFFFF;
     margin-top: 165px;
     border:2px solid #00DCFF;
     background:black;
@@ -510,6 +535,7 @@ section{
     white-space: nowrap;
     box-sizing: border-box;
   }
+
   .cover222:hover{
     color:#00FFFF;
     border:solid #00FFFF;
@@ -547,6 +573,7 @@ section{
   background:url(IMAGES/blur.png);
   border-radius: 10px;
   padding:10px;
+  z-index: 2;
   color:black;
   font-weight: bolder;
   background-position: center;
@@ -598,6 +625,7 @@ section{
   text-align: center;
   line-height: 30px;
   color:#000000;
+  z-index: 2;
   font-weight: bolder;
   background: linear-gradient(rgba(255, 255, 255, 0.225) 100%,transparent 0%), url(IMAGES/grid3.png);
   background-size: cover;
