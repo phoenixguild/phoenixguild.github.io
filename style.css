@@ -173,11 +173,12 @@ html{
   position:absolute;
 }
 .addition4{
-  height:130vh;
-  width:50%;
-  margin-left: 50%;
+  height:300px;
+  width:300px;
+  margin-top: 150px;
+  margin-left: 70%;
   background: url(IMAGES/landing_launch\ \(2\).svg);
-  background-size: 50% 50%;
+  background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
   position:absolute;
@@ -293,6 +294,7 @@ main h3 span{
     width:40%;
     margin-left: 300px;
     height:100%;
+    margin-bottom: 100px;
     background: url(IMAGES/landing_launch\ \(2\).svg);
     background-size: 300px 300px;
     background-repeat: no-repeat;
@@ -331,7 +333,7 @@ a:hover{
 }
 section{
   margin: auto;
-    height: 350vh;
+    height: 310vh;
     border:1px;
     width:100%;
     background-color: #04182F;
@@ -345,7 +347,7 @@ section{
   }
   section .containing{
     margin: 100px;
-    background:linear-gradient(135deg,#000, #04182F, #00FFFF,#04182F,#000);
+    background:linear-gradient(135deg,#000, #04182F, #0d8b8b,#04182F,#000);
     background-size: cover;
     height:300vh;
     border-radius: 20px;
@@ -553,6 +555,7 @@ section{
 }
 .grid1 h2{
   color:black;
+  white-space: nowrap;
 }
 .grid2{
   border:2px solid  #00DCFF;
@@ -571,6 +574,7 @@ backdrop-filter: blur(5px);
 }
 .grid2 h2{
   color:black;
+  white-space: nowrap;
 }
 .box-within-grid2{
   height:50px;
@@ -598,18 +602,20 @@ backdrop-filter: blur(5px);
   line-height: 30px;
   color:#000000;
   z-index: 2;
+  
   font-size: 2rem;
   font-weight: bolder;
-  background: linear-gradient(rgba(255, 255, 255, 0.225) 100%,transparent 0%), url(IMAGES/grid3.png);
+  background: linear-gradient(rgba(255, 255, 255, 0.296) 100%,transparent 0%), url(IMAGES/blur-grid3.png);
   background-size: cover;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(9px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 .grid3 h2{
   white-space: nowrap;
   color:#000000;
+  padding-left: 20px;
 }
 .grid4{
   border:2px solid  #00DCFF;
@@ -619,6 +625,7 @@ backdrop-filter: blur(5px);
   font-weight: bolder;
   text-align: center;
   line-height: 30px;
+  border-radius: 16px;
   background: linear-gradient(rgba(255, 255, 255, 0.225) 100%,transparent 0%), url(IMAGES/grid4.jpg);
   background-size: cover;
 }
@@ -657,7 +664,6 @@ backdrop-filter: blur(5px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5.6px);
   -webkit-backdrop-filter: blur(5.6px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
   color:black;
 }
 .ino{
@@ -673,7 +679,6 @@ backdrop-filter: blur(5px);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5.6px);
   -webkit-backdrop-filter: blur(5.6px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
   color:black;
 }
 h2 img{
@@ -684,7 +689,7 @@ h2 img{
   height:50px;
 
 }
-.ino h{
+.ino h2{
   white-space: nowrap;
 }
 .click{
@@ -712,11 +717,10 @@ h2 img{
   border-radius: 15px;
   color:#00DCFF;
   margin:auto;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 .token-info{
   height: 300px;
-  margin-top: 50%;
   padding:0 100px 0 100px;
   line-height: 30px;
   border:1px solid #04182F;
@@ -728,6 +732,14 @@ h2 img{
   font-size: 4rem;
   padding-top: 25px;
 }
+aside{
+  margin-top: 150px;
+  height:210vh;
+  border:1px;
+  background-color: none;
+  width: 100%;
+}
+
 .our-partners{
   height:400px;
   width:100%;
