@@ -333,7 +333,7 @@ a:hover{
 }
 section{
   margin: auto;
-    height: 310vh;
+    height: 340vh;
     border:1px;
     width:100%;
     background-color: #04182F;
@@ -359,6 +359,7 @@ section{
     background-color: transparent;
   }
   section h2{
+    padding-top: 40px;
     font-size: 40px;
     text-align: center;
     text-transform: uppercase;
@@ -381,7 +382,7 @@ section{
     height:800px;
     position: absolute;
     z-index: 1;
-    margin-top: 20px;
+    margin-top: 70px;
     border: 1px ;
     
   }
@@ -460,7 +461,7 @@ section{
     width: 85%;
     height: 200px;
     margin: auto;
-    transform: translateY(-190px);
+    transform: translateY(-150px);
     background:none;
     z-index: -10;
   }
